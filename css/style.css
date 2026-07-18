@@ -437,3 +437,55 @@ footer{
     flex-direction:column;
 }
 }
+.search-box{
+    width:100%;
+    max-width:600px;
+    padding:15px 20px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    margin:20px 0;
+    font-size:16px;
+}
+
+.opportunities{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.opportunity-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.opportunity-card:hover{
+    transform:translateY(-5px);
+}
+
+.tag{
+    display:inline-block;
+    background:#eef2ff;
+    color:#4f46e5;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.apply-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#4f46e5;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+.opportunities{
+    grid-template-columns:1fr;
+}
+}
