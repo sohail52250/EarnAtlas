@@ -20,3 +20,22 @@ card.innerText.toLowerCase()
 });
 
 }
+
+document.querySelectorAll('.save-btn')
+.forEach(button=>{
+
+button.addEventListener('click',()=>{
+
+button.classList.toggle('saved');
+
+if(button.classList.contains('saved')){
+button.innerText='Saved';
+}
+else{
+button.innerText='Save';
+}
+
+});
+
+});
+
