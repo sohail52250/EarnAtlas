@@ -293,3 +293,78 @@ footer{
 
 }
 
+.dashboard{
+    display:flex;
+    min-height:80vh;
+    background:#f8fafc;
+}
+
+.sidebar{
+    width:240px;
+    background:#111827;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h2{
+    color:#6366f1;
+}
+
+.sidebar a{
+    display:block;
+    color:#cbd5e1;
+    text-decoration:none;
+    margin:20px 0;
+}
+
+.dashboard-content{
+    flex:1;
+    padding:40px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.stat-card h3{
+    color:#6366f1;
+}
+
+.progress{
+    background:#e5e7eb;
+    height:10px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    width:70%;
+    background:#6366f1;
+}
+
+@media(max-width:768px){
+
+.dashboard{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:auto;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+}
