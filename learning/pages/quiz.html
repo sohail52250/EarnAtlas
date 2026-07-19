@@ -1,148 +1,131 @@
 ﻿<!DOCTYPE html>
+
 <html>
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>EarnAtlas Quiz</title>
+<title>Lesson Quiz</title>
 
 <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 
+
 <body>
-
-<div id="language-area"></div>
-
-<script>
-
-fetch('/components/language.html')
-.then(r=>r.text())
-.then(t=>document.getElementById('language-area').innerHTML=t)
-
-</script>
 
 
 <h1>
-EarnAtlas Lesson Quiz
+Lesson Quiz
 </h1>
 
+
 <div id="quiz">
-Loading quiz...
+
+Loading...
+
 </div>
 
 
 <script type="module">
 
-import { supabase } from "../../supabase/js/client.js";
+
+import {supabase}
+
+from "../../supabase/js/client.js";
 
 
-const params =
-new URLSearchParams(location.search);
-
-const lessonId =
-Number(params.get("id"));
+const id =
+new URLSearchParams(location.search).get("id");
 
 
-let user;
+
+async function load(){
 
 
-async function start(){
+const {data:{user}}=
 
-const result =
 await supabase.auth.getUser();
-
-user=result.data.user;
 
 
 if(!user){
 
 location.href="../../pages/auth/login.html";
+
 return;
 
 }
 
 
-showQuiz();
-
-}
-
-
-
-function showQuiz(){
-
 
 document.getElementById("quiz").innerHTML=
 
 <h2>
-What did you learn?
+Complete this lesson quiz
 </h2>
 
+
 <p>
-Select the correct answer:
+Did you understand this lesson?
 </p>
 
 
-<button onclick="checkAnswer(true)">
-Online skills can create income
+<button onclick="finishQuiz(100)">
+Pass Quiz
 </button>
 
 
-<br><br>
-
-
-<button onclick="checkAnswer(false)">
-Online earning is impossible
+<button onclick="finishQuiz(40)">
+Retry Learning
 </button>
-
-
-<p id="result"></p>
 
 ;
 
-}
 
 
-
-window.checkAnswer = async function(correct){
-
-
-if(correct){
+window.finishQuiz=async function(score){
 
 
-document.getElementById("result").innerHTML=
-"✅ Correct! Lesson unlocked.";
+let passed=score>=70;
+
 
 
 await supabase
-.from("user_progress")
+
+.from("quiz_results")
+
 .insert({
 
 user_id:user.id,
 
-lesson_id:lessonId,
+lesson_id:id,
 
-completed:true,
+score:score,
 
-score:100
+passed:passed
 
 });
 
 
-setTimeout(()=>{
+
+if(passed){
+
+
+alert("Lesson completed. Next lesson unlocked.");
+
 
 location.href="dashboard.html";
 
-},1500);
+
+}
+
+else{
 
 
-
-}else{
-
-
-document.getElementById("result").innerHTML=
-"❌ Wrong answer. Please relearn this lesson and try again.";
+alert("Please study again and retry.");
 
 }
 
@@ -151,13 +134,16 @@ document.getElementById("result").innerHTML=
 
 
 
-start();
+}
+
+
+
+load();
 
 
 </script>
 
-<script src='../../ads-component.html'></script></body>
+
+</body>
+
 </html>
-
-
-
