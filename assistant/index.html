@@ -6,13 +6,10 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>EarnAtlas AI Assistant</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -20,35 +17,30 @@
 
 
 <h1>
-EarnAtlas AI Assistant
+EarnAtlas AI Learning Assistant
 </h1>
 
 
 <h2>
-آپ کا آن لائن کمائی مددگار
+AI سیکھنے کا معاون
 </h2>
+
 
 
 <div class="card">
 
 
-<p>
-Ask your learning question:
-</p>
+<textarea id="question"
 
+placeholder="Ask about skills, freelancing or online earning">
 
-<p>
-اپنا سوال پوچھیں:
-</p>
+</textarea>
 
-
-<input id="question"
-placeholder="Example: Which skill should I learn?">
 
 
 <button onclick="askAI()">
 
-Ask Assistant
+Ask AI
 
 </button>
 
@@ -62,66 +54,88 @@ Ask Assistant
 
 
 
-<script>
+<script type="module">
 
 
-function askAI(){
+import {supabase}
+
+from "../supabase/js/client.js";
 
 
-let q=document
 
-.getElementById("question")
+window.askAI=async function(){
 
-.value
 
-.toLowerCase();
+const question=
+
+document.getElementById("question").value;
 
 
 
 let answer="";
 
 
-
-if(q.includes("freelance")){
-
+if(question.toLowerCase().includes("skill")){
 
 answer=
 
-"Start with a skill, create a profile, learn client communication, then apply for projects.\n\nفری لانسنگ کے لئے مہارت، پروفائل اور کلائنٹس سے رابطہ سیکھیں۔";
-
+"Start with digital marketing, programming, design or AI tools.";
 
 }
 
-else if(q.includes("ai")){
-
+else if(question.toLowerCase().includes("freelance")){
 
 answer=
 
-"Learn AI tools, automation and digital services.\n\nAI ٹولز، آٹومیشن اور ڈیجیٹل خدمات سیکھیں۔";
-
+"Create a profile, build samples and start with small projects.";
 
 }
 
 else{
 
-
 answer=
 
-"Start Beginner Level lessons first.\n\nپہلے ابتدائی مراحل مکمل کریں۔";
+"Learn consistently and improve your digital skills.";
+
+}
+
+
+
+document.getElementById("answer").innerText=
+
+answer;
+
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(user){
+
+
+await supabase
+
+.from("ai_messages")
+
+.insert({
+
+user_id:user.id,
+
+question:question,
+
+answer:answer
+
+});
 
 
 }
 
 
-
-document.getElementById("answer")
-
-.innerHTML=
-
-"<p>"+answer+"</p>";
-
-
 }
+
 
 
 </script>
@@ -130,4 +144,3 @@ document.getElementById("answer")
 </body>
 
 </html>
-
