@@ -1,4 +1,4 @@
-﻿EarnAtlas Monitoring
+EarnAtlas Monitoring
 
 
 Current:

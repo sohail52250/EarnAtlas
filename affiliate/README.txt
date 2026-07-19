@@ -1,4 +1,4 @@
-﻿EarnAtlas Affiliate System
+EarnAtlas Affiliate System
 
 
 [X] Affiliate profiles

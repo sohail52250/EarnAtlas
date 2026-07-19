@@ -1,4 +1,4 @@
-﻿EarnAtlas Backend API
+EarnAtlas Backend API
 
 Future endpoints:
 

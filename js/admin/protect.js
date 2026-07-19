@@ -1,4 +1,4 @@
-﻿import {supabase} from "../../supabase/js/client.js";
+import {supabase} from "../../supabase/js/client.js";
 
 
 export async function checkAdmin(){

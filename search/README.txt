@@ -1,4 +1,4 @@
-﻿EarnAtlas Search System
+EarnAtlas Search System
 
 
 [X] Course search

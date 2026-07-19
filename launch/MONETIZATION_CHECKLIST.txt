@@ -1,4 +1,4 @@
-﻿EarnAtlas Monetization Setup
+EarnAtlas Monetization Setup
 
 
 [X] Subscription database

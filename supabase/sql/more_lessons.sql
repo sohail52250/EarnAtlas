@@ -1,4 +1,4 @@
-﻿
+
 insert into lessons
 (id,level,title_en,title_ur,content_en,content_ur,order_number)
 

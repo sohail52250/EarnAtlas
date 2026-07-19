@@ -1,4 +1,4 @@
-﻿
+
 about\index.html:11:<title>About EarnAtlas</title>
 admin\business\index.html:7:<title>
 admin\index.html:11:<title>EarnAtlas Admin Control Center</title>

@@ -1,4 +1,4 @@
-﻿# EarnAtlas Frontend Audit
+# EarnAtlas Frontend Audit
 
 Generated: 07/20/2026 00:34:15
 

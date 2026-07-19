@@ -1,4 +1,4 @@
-﻿# EarnAtlas PWA Setup
+# EarnAtlas PWA Setup
 
 
 Added:

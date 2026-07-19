@@ -1,4 +1,4 @@
-﻿export async function recordActivity(
+export async function recordActivity(
 
 supabase,
 

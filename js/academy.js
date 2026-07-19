@@ -1,4 +1,4 @@
-﻿let userProgress =
+let userProgress =
 JSON.parse(localStorage.getItem("earnatlas_progress"))
 || {};
 

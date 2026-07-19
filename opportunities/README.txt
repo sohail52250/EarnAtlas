@@ -1,4 +1,4 @@
-﻿EarnAtlas Opportunity Board
+EarnAtlas Opportunity Board
 
 
 [X] Remote jobs

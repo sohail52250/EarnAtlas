@@ -1,4 +1,4 @@
-﻿Write-Host "EarnAtlas Launch Checker"
+Write-Host "EarnAtlas Launch Checker"
 Write-Host "-----------------------"
 
 

@@ -1,4 +1,4 @@
-﻿EarnAtlas Production Security Checklist
+EarnAtlas Production Security Checklist
 
 
 [ ] Enable Supabase Row Level Security

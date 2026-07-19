@@ -1,4 +1,4 @@
-﻿EarnAtlas Deep Frontend Check
+EarnAtlas Deep Frontend Check
 
 Date:
 07/20/2026 00:36:11

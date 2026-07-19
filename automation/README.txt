@@ -1,4 +1,4 @@
-﻿EarnAtlas Smart Growth System
+EarnAtlas Smart Growth System
 
 
 [X] Activity tracking

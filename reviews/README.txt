@@ -1,4 +1,4 @@
-﻿EarnAtlas Review System
+EarnAtlas Review System
 
 
 [X] Course reviews

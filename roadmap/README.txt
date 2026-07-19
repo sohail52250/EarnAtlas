@@ -1,4 +1,4 @@
-﻿EarnAtlas Learning Roadmap
+EarnAtlas Learning Roadmap
 
 
 [X] Skill paths

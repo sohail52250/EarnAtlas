@@ -1,4 +1,4 @@
-﻿EarnAtlas Launch Report
+EarnAtlas Launch Report
 
 Date:
 $(Get-Date)

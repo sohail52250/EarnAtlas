@@ -1,4 +1,4 @@
-﻿create table if not exists lessons (
+create table if not exists lessons (
 
 id bigint primary key,
 

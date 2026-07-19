@@ -1,4 +1,4 @@
-﻿export async function logEvent(
+export async function logEvent(
 supabase,
 event,
 details

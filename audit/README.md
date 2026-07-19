@@ -1,4 +1,4 @@
-﻿EarnAtlas Frontend Audit
+EarnAtlas Frontend Audit
 =======================
 
 Date:

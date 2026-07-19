@@ -1,4 +1,4 @@
-﻿-- EarnAtlas Supabase Security Policies
+-- EarnAtlas Supabase Security Policies
 
 alter table profiles enable row level security;
 alter table student_stats enable row level security;

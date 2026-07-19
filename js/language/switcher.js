@@ -1,4 +1,4 @@
-﻿let language =
+let language =
 localStorage.getItem("earnatlas_language") || "en";
 
 

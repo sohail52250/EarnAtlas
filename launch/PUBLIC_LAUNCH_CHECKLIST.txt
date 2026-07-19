@@ -1,4 +1,4 @@
-﻿EarnAtlas Public Launch Checklist
+EarnAtlas Public Launch Checklist
 
 
 [X] Website deployed

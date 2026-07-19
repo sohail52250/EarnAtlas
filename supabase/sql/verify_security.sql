@@ -1,4 +1,4 @@
-﻿-- EarnAtlas Security Verification
+-- EarnAtlas Security Verification
 
 select tablename, rowsecurity
 from pg_tables

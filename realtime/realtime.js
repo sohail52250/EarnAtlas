@@ -1,4 +1,4 @@
-﻿import {supabase}
+import {supabase}
 
 from "../supabase/js/client.js";
 

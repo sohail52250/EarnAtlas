@@ -1,4 +1,4 @@
-﻿EarnAtlas AI Tutor
+EarnAtlas AI Tutor
 
 
 [X] AI question assistant

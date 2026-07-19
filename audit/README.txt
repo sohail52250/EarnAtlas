@@ -1,4 +1,4 @@
-﻿EarnAtlas Audit System
+EarnAtlas Audit System
 
 
 [X] Admin logs

@@ -1,4 +1,4 @@
-﻿# EarnAtlas Production Launch Checklist
+# EarnAtlas Production Launch Checklist
 
 
 ## SEO

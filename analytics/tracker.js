@@ -1,4 +1,4 @@
-﻿export async function trackEvent(
+export async function trackEvent(
 supabase,
 eventName,
 page

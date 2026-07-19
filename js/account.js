@@ -1,4 +1,4 @@
-﻿let user =
+let user =
 JSON.parse(localStorage.getItem("earnatlas_user"))
 ||
 {

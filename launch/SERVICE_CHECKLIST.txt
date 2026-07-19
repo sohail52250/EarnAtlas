@@ -1,4 +1,4 @@
-﻿EarnAtlas Production Services Checklist
+EarnAtlas Production Services Checklist
 
 
 [X] Supabase Database

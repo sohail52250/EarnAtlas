@@ -1,4 +1,4 @@
-﻿let lessons =
+let lessons =
 JSON.parse(localStorage.getItem("earnatlas_lessons"))
 || [];
 

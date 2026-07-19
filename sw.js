@@ -1,4 +1,4 @@
-﻿const CACHE_NAME="earnatlas-v1";
+const CACHE_NAME="earnatlas-v1";
 
 
 const FILES=[

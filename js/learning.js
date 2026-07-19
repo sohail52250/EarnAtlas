@@ -1,4 +1,4 @@
-﻿let progress = JSON.parse(localStorage.getItem("earnatlas_progress")) || {};
+let progress = JSON.parse(localStorage.getItem("earnatlas_progress")) || {};
 
 function completeLesson(id){
 

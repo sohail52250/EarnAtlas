@@ -1,4 +1,4 @@
-﻿export function cleanInput(value){
+export function cleanInput(value){
 
 if(!value){
 

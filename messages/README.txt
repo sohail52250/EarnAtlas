@@ -1,4 +1,4 @@
-﻿EarnAtlas Messaging System
+EarnAtlas Messaging System
 
 
 [X] User messaging

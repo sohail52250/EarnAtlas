@@ -1,4 +1,4 @@
-﻿# EarnAtlas Refinement Phase
+# EarnAtlas Refinement Phase
 
 Started:
 - Configuration cleanup

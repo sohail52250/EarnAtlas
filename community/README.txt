@@ -1,4 +1,4 @@
-﻿EarnAtlas Community System
+EarnAtlas Community System
 
 
 [X] Discussion posts

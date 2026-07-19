@@ -1,4 +1,4 @@
-﻿EarnAtlas Creator System
+EarnAtlas Creator System
 
 
 [X] Creator profiles

@@ -1,4 +1,4 @@
-﻿
+
 js\admin\protect.js:24:const {data, error}=await supabase
 js\admin\protect.js:36:if(error || !data || data.role!=="admin"){
 js\auth.js:26:const {data,error}=await supabase.auth.signUp({

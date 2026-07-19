@@ -1,4 +1,4 @@
-﻿create index if not exists lessons_title_search_idx
+create index if not exists lessons_title_search_idx
 
 on lessons(title_en);
 

@@ -1,4 +1,4 @@
-﻿async function loadOpportunities(){
+async function loadOpportunities(){
 
 const container=document.querySelector('.opportunities');
 

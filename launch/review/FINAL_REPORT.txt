@@ -1,4 +1,4 @@
-﻿EarnAtlas Production Review Report
+EarnAtlas Production Review Report
 
 Generated:
 $(Get-Date)

@@ -1,4 +1,4 @@
-﻿EarnAtlas Realtime System
+EarnAtlas Realtime System
 
 
 [X] Realtime message foundation
