@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Admin Control Center</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Admin Control Center
+</h1>
+
+
+<h2>
+ایڈمن کنٹرول سینٹر
+</h2>
+
+
+
+<div id="stats">
+
+Loading...
+
+</div>
+
+
+
+<div class="card">
+
+<a href="../pages/admin/ads.html">
+
+Manage Advertisements
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<a href="../announcements/">
+
+Create Announcements
+
+</a>
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadAdmin(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {data:profile}=await supabase
+
+.from("profiles")
+
+.select("role")
+
+.eq("id",user.id)
+
+.single();
+
+
+
+if(!profile || profile.role!=="admin"){
+
+document.body.innerHTML=
+
+"<h1>Access Denied</h1>";
+
+return;
+
+}
+
+
+
+const users=
+
+await supabase
+
+.from("profiles")
+
+.select("*");
+
+
+
+const lessons=
+
+await supabase
+
+.from("lessons")
+
+.select("*");
+
+
+
+const ads=
+
+await supabase
+
+.from("advertisements")
+
+.select("*");
+
+
+
+document.getElementById("stats")
+
+.innerHTML=
+
+`
+
+<div class="card">
+
+<h3>
+Users
+</h3>
+
+<p>
+${users.data?.length || 0}
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Lessons
+</h3>
+
+<p>
+${lessons.data?.length || 0}
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Advertisements
+</h3>
+
+<p>
+${ads.data?.length || 0}
+</p>
+
+</div>
+
+`;
+
+
+
+}
+
+
+loadAdmin();
+
+
+</script>
+
+
+</body>
+
+</html>

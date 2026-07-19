@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Announcements</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Platform Announcements
+</h1>
+
+
+<div class="card">
+
+
+<input id="title" placeholder="Title">
+
+
+<textarea id="message"
+placeholder="Message"></textarea>
+
+
+
+<button onclick="send()">
+
+Publish
+
+</button>
+
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.send=async function(){
+
+
+await supabase
+
+.from("announcements")
+
+.insert({
+
+title:title.value,
+
+message:message.value
+
+});
+
+
+alert("Announcement published");
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
