@@ -46,3 +46,33 @@ alert('Please register first');
 
 }
 
+
+function loadProfile(){
+
+let user =
+localStorage.getItem('earnatlas_user');
+
+
+if(user){
+
+let data =
+JSON.parse(user);
+
+
+let nameBox =
+document.querySelector('.profile-name');
+
+
+if(nameBox){
+
+nameBox.innerText=data.name;
+
+}
+
+}
+
+}
+
+
+loadProfile();
+
