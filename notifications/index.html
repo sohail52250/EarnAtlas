@@ -4,17 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>EarnAtlas Notifications</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#2563eb">
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -27,12 +20,12 @@ Notifications
 
 
 <h2>
-اطلاعات اور پیغامات
+اطلاعات اور اعلانات
 </h2>
 
 
 
-<div id="list">
+<div id="notifications">
 
 Loading...
 
@@ -42,13 +35,14 @@ Loading...
 
 <script type="module">
 
+
 import {supabase}
 
 from "../supabase/js/client.js";
 
 
 
-async function loadNotifications(){
+async function load(){
 
 
 const {data:{user}}=
@@ -76,6 +70,7 @@ const {data}=await supabase
 .eq("user_id",user.id)
 
 .order("created_at",
+
 {ascending:false});
 
 
@@ -83,16 +78,7 @@ const {data}=await supabase
 let html="";
 
 
-if(!data || data.length===0){
-
-html="<p>No notifications yet</p>";
-
-}
-
-else{
-
-
-data.forEach(n=>{
+data?.forEach(n=>{
 
 
 html+=`
@@ -107,25 +93,32 @@ ${n.title}
 ${n.message}
 </p>
 
+<small>
+${n.created_at}
+</small>
+
 </div>
 
 `;
 
+
+
 });
 
 
+
+document.getElementById("notifications")
+
+.innerHTML=
+
+html || "No notifications";
+
+
 }
 
 
 
-document.getElementById("list").innerHTML=html;
-
-
-}
-
-
-
-loadNotifications();
+load();
 
 
 </script>
@@ -134,5 +127,3 @@ loadNotifications();
 </body>
 
 </html>
-
-
