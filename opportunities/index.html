@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Opportunities</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Jobs & Opportunities
+</h1>
+
+
+<h2>
+نوکریاں اور مواقع
+</h2>
+
+
+
+<input id="search"
+
+placeholder="Search skills or jobs">
+
+
+
+<button onclick="findJobs()">
+
+Search
+
+</button>
+
+
+
+<div id="jobs">
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.findJobs=async function(){
+
+
+let q=
+
+search.value;
+
+
+
+const {data}=await supabase
+
+.from("opportunities")
+
+.select("*")
+
+.ilike("category","%"+q+"%");
+
+
+
+let html="";
+
+
+
+data?.forEach(job=>{
+
+
+html+=`
+
+<div class="card">
+
+<h2>
+
+${job.title}
+
+</h2>
+
+
+<p>
+
+${job.company}
+
+</p>
+
+
+<p>
+
+${job.description}
+
+</p>
+
+
+<a href="${job.link}">
+
+Apply
+
+</a>
+
+
+</div>
+
+`;
+
+
+
+});
+
+
+document.getElementById("jobs")
+
+.innerHTML=
+
+html || "No opportunities found";
+
+
+}
+
+
+
+findJobs();
+
+
+</script>
+
+
+</body>
+
+</html>
