@@ -1,0 +1,215 @@
+﻿
+about\index.html:11:<title>About EarnAtlas</title>
+admin\business\index.html:7:<title>
+admin\index.html:11:<title>EarnAtlas Admin Control Center</title>
+admin-panel\index.html:7:<title>EarnAtlas Admin Control Center</title>
+advertise\index.html:10:<title>Advertise With EarnAtlas</title>
+advertise\index.html:57:<textarea id="description"
+advertise\index.html:100:description:
+advertise\index.html:101:document.getElementById("description").value
+advertiser\dashboard\index.html:7:<title>Advertiser Dashboard</title>
+advertiser\index.html:11:<title>EarnAtlas Advertise</title>
+advertiser\index.html:46:<textarea id="description"
+advertiser\index.html:47:placeholder="Business Description"></textarea>
+advertiser\index.html:118:description:
+advertiser\index.html:119:document.getElementById("description").value,
+affiliate\index.html:7:<title>EarnAtlas Affiliate</title>
+ai-tutor\index.html:7:<title>EarnAtlas AI Tutor</title>
+analytics\index.html:7:<title>EarnAtlas Analytics</title>
+announcements\index.html:7:<title>Announcements</title>
+assistant\index.html:9:<title>EarnAtlas AI Assistant</title>
+audit\index.html:7:<title>EarnAtlas Audit Center</title>
+blog\index.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+blog\index.html:7:<title>EarnAtlas Blog | Online Earning Guides</title>
+blog\index.html:10:<link rel="canonical" href="https://earn-atlas.vercel.app/blog/">
+certificates\index.html:7:<title>EarnAtlas Certificates</title>
+community\index.html:7:<title>EarnAtlas Community</title>
+contact\index.html:11:<title>EarnAtlas Contact</title>
+courses\ai-course.html:7:<title>AI Income Course</title>
+courses\freelancing-course.html:7:<title>Freelancing Course</title>
+courses\index.html:11:<title>EarnAtlas Courses</title>
+creator\index.html:7:<title>EarnAtlas Creator Dashboard</title>
+creator\index.html:37:<textarea id="description"
+creator\index.html:39:placeholder="Course Description">
+creator\index.html:102:description:description.value,
+dashboard\index.html:11:<title>EarnAtlas Student Dashboard</title>
+en\academy\lessons\lesson1.html:7:<title>
+en\academy\lessons\lesson10.html:7:<title>
+en\academy\lessons\lesson2.html:7:<title>
+en\academy\lessons\lesson3.html:7:<title>
+en\academy\lessons\lesson4.html:7:<title>
+en\academy\lessons\lesson5.html:7:<title>
+en\academy\lessons\lesson6.html:7:<title>
+en\academy\lessons\lesson7.html:7:<title>
+en\academy\lessons\lesson8.html:7:<title>
+en\academy\lessons\lesson9.html:7:<title>
+en\academy\lessons\quiz1.html:7:<title>
+en\academy\lessons\quiz10.html:7:<title>
+en\academy\lessons\quiz2.html:7:<title>
+en\academy\lessons\quiz3.html:7:<title>
+en\academy\lessons\quiz4.html:7:<title>
+en\academy\lessons\quiz5.html:7:<title>
+en\academy\lessons\quiz6.html:7:<title>
+en\academy\lessons\quiz7.html:7:<title>
+en\academy\lessons\quiz8.html:7:<title>
+en\academy\lessons\quiz9.html:7:<title>
+en\academy\index.html:8:<title>EarnAtlas Academy</title>
+en\account\index.html:7:<title>
+en\admin\index.html:7:<title>
+en\admin\index.html:52:<textarea id="description"
+en\admin\index.html:53:placeholder="Lesson description">
+en\business\advertise.html:7:<title>Advertise With EarnAtlas</title>
+en\business\advertise.html:72:Description
+en\certificate\index.html:7:<title>
+en\dashboard\index.html:8:<title>
+en\lessons\index.html:7:<title>EarnAtlas Learning Path</title>
+en\login\index.html:7:<title>
+en\profile\index.html:7:<title>
+feedback\index.html:7:<title>EarnAtlas Feedback</title>
+launch\index.html:7:<title>EarnAtlas Status</title>
+launch-banner\index.html:11:<title>EarnAtlas Launch</title>
+leaderboard\index.html:7:<title>EarnAtlas Leaderboard</title>
+learning\levels\index.html:11:<title>EarnAtlas Course Roadmap</title>
+learning\pages\achievements\index.html:11:<title>EarnAtlas Achievements</title>
+learning\pages\certificate\index.html:11:<title>EarnAtlas Certificate</title>
+learning\pages\lessons\lesson.html:9:<title>EarnAtlas Lesson</title>
+learning\pages\dashboard.html:6:<title>EarnAtlas Student Dashboard</title>
+learning\pages\lesson.html:9:<title>EarnAtlas Lesson</title>
+learning\pages\profile.html:11:<title>EarnAtlas Student Profile</title>
+learning\pages\quiz.html:11:<title>Lesson Quiz</title>
+learning\index.html:11:<title>EarnAtlas Learning Roadmap</title>
+marketplace\sell\index.html:7:<title>Add Marketplace Item</title>
+marketplace\sell\index.html:31:<textarea id="description"
+marketplace\sell\index.html:32:placeholder="Description"></textarea>
+marketplace\sell\index.html:79:description:
+marketplace\sell\index.html:80:description.value,
+marketplace\index.html:7:<title>EarnAtlas Marketplace</title>
+marketplace\index.html:81:${item.description}
+messages\index.html:7:<title>EarnAtlas Messages</title>
+notifications\index.html:7:<title>EarnAtlas Notifications</title>
+opportunities\index.html:7:<title>EarnAtlas Opportunities</title>
+opportunities\index.html:103:${job.description}
+pages\admin\analytics\index.html:11:<title>EarnAtlas Analytics</title>
+pages\admin\panel\index.html:11:<title>EarnAtlas Admin Panel</title>
+pages\admin\ads.html:11:<title>Advertisement Approval</title>
+pages\admin\ads.html:137:${ad.description}
+pages\admin\index.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\admin\index.html:7:<title>EarnAtlas Admin Panel</title>
+pages\admin\index.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/admin/index.html">
+pages\advertise\packages\index.html:10:<title>Advertising Packages</title>
+pages\advertise\index.html:10:<title>Advertise With EarnAtlas</title>
+pages\auth\login.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\auth\login.html:7:<title>EarnAtlas Login</title>
+pages\auth\login.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/auth/login.html">
+pages\auth\register.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\auth\register.html:7:<title>EarnAtlas Register</title>
+pages\auth\register.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/auth/register.html">
+pages\dashboard\index.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\dashboard\index.html:7:<title>EarnAtlas Dashboard</title>
+pages\dashboard\index.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/dashboard/index.html">
+pages\earn\index.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\earn\index.html:7:<title>Earn Opportunities | EarnAtlas</title>
+pages\earn\index.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/earn/index.html">
+pages\financial\index.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+pages\financial\index.html:5:<title>Financial Guide | EarnAtlas</title>
+pages\financial\index.html:10:<link rel="canonical" href="https://earn-atlas.vercel.app/pages/financial/index.html">
+payments\index.html:11:<title>EarnAtlas Payments</title>
+premium\courses\index.html:7:<title>Premium Courses</title>
+premium\index.html:11:<title>EarnAtlas Premium</title>
+pricing\index.html:7:<title>EarnAtlas Plans</title>
+pricing-plans\index.html:7:<title>EarnAtlas Premium</title>
+profile\index.html:7:<title>EarnAtlas Profile</title>
+recommendations\index.html:7:<title>EarnAtlas Recommendations</title>
+referral\index.html:7:<title>EarnAtlas Referral</title>
+reviews\index.html:7:<title>EarnAtlas Reviews</title>
+roadmap\index.html:7:<title>EarnAtlas Learning Roadmap</title>
+roadmap\index.html:88:${path.description}
+search\index.html:7:<title>EarnAtlas Search</title>
+search\index.html:129:${item.description}
+student\index.html:7:<title>Student Profile</title>
+support\index.html:7:<title>EarnAtlas Support</title>
+ur\academy\lessons\lesson1.html:8:<title>
+ur\academy\lessons\lesson10.html:8:<title>
+ur\academy\lessons\lesson2.html:8:<title>
+ur\academy\lessons\lesson3.html:8:<title>
+ur\academy\lessons\lesson4.html:8:<title>
+ur\academy\lessons\lesson5.html:8:<title>
+ur\academy\lessons\lesson6.html:8:<title>
+ur\academy\lessons\lesson7.html:8:<title>
+ur\academy\lessons\lesson8.html:8:<title>
+ur\academy\lessons\lesson9.html:8:<title>
+ur\academy\lessons\quiz1.html:7:<title>
+ur\academy\lessons\quiz10.html:7:<title>
+ur\academy\lessons\quiz2.html:7:<title>
+ur\academy\lessons\quiz3.html:7:<title>
+ur\academy\lessons\quiz4.html:7:<title>
+ur\academy\lessons\quiz5.html:7:<title>
+ur\academy\lessons\quiz6.html:7:<title>
+ur\academy\lessons\quiz7.html:7:<title>
+ur\academy\lessons\quiz8.html:7:<title>
+ur\academy\lessons\quiz9.html:7:<title>
+ur\academy\index.html:10:<title>EarnAtlas اکیڈمی</title>
+ur\account\index.html:7:<title>
+ur\admin\index.html:9:<title>
+ur\admin\index.html:58:<textarea id="description"
+ur\blog\index.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+ur\blog\index.html:9:<title>EarnAtlas اردو بلاگ</title>
+ur\blog\index.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/ur/blog/">
+ur\business\advertise.html:7:<title>
+ur\certificate\index.html:8:<title>
+ur\dashboard\index.html:9:<title>
+ur\lessons\index.html:8:<title>EarnAtlas سیکھنے کا راستہ</title>
+ur\login\index.html:8:<title>
+ur\pages\dashboard.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+ur\pages\dashboard.html:6:<title>EarnAtlas ڈیش بورڈ</title>
+ur\pages\dashboard.html:11:<link rel="canonical" href="https://earn-atlas.vercel.app/ur/pages/dashboard.html">
+ur\pages\earn.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing 
+opportunities, AI tools and digital income resources.">
+ur\pages\earn.html:6:<title>EarnAtlas کمائی</title>
+ur\pages\earn.html:11:<link rel="canonical" href="https://earn-atlas.vercel.app/ur/pages/earn.html">
+ur\profile\index.html:7:<title>
+ur\index.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, 
+AI tools and digital income resources.">
+ur\index.html:7:<title>EarnAtlas اردو | آن لائن کمائی</title>
+ur\index.html:12:<link rel="canonical" href="https://earn-atlas.vercel.app/ur/">
+ur\terms.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, 
+AI tools and digital income resources.">
+ur\terms.html:7:<title>EarnAtlas شرائط</title>
+ur\terms.html:10:<link rel="canonical" href="https://earn-atlas.vercel.app/ur/terms.html">
+verify\index.html:7:<title>Certificate Verification</title>
+404.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, AI 
+tools and digital income resources.">
+404.html:7:<title>Page Not Found</title>
+404.html:10:<link rel="canonical" href="https://earn-atlas.vercel.app/404.html">
+about.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, AI 
+tools and digital income resources.">
+about.html:6:<title>About EarnAtlas</title>
+about.html:11:<link rel="canonical" href="https://earn-atlas.vercel.app/about.html">
+contact.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, 
+AI tools and digital income resources.">
+contact.html:6:<title>Contact EarnAtlas</title>
+contact.html:11:<link rel="canonical" href="https://earn-atlas.vercel.app/contact.html">
+index.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, AI 
+tools and digital income resources.">
+index.html:10:<title>EarnAtlas | Discover Online Opportunities</title>
+index.html:20:<link rel="canonical" href="https://earn-atlas.vercel.app/">
+privacy.html:4:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, 
+AI tools and digital income resources.">
+privacy.html:6:<title>Privacy Policy - EarnAtlas</title>
+privacy.html:11:<link rel="canonical" href="https://earn-atlas.vercel.app/privacy.html">
+status.html:7:<title>System Status</title>
+terms.html:5:<meta name="description" content="EarnAtlas provides online earning guides, freelancing opportunities, AI 
+tools and digital income resources.">
+terms.html:9:<title>EarnAtlas Terms & Conditions</title>
+terms.html:14:<link rel="canonical" href="https://earn-atlas.vercel.app/terms.html">
+
+

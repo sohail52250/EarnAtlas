@@ -1,0 +1,352 @@
+﻿
+about\index.html:13:<link rel="stylesheet" href="../css/style.css">
+admin\business\index.html:13:<link rel="stylesheet" href="/css/navigation.css">
+admin\index.html:13:<link rel="stylesheet" href="../css/style.css">
+admin\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+admin\index.html:135:from "../supabase/js/client.js";
+admin-panel\index.html:9:<link rel="stylesheet" href="../css/style.css">
+admin-panel\index.html:67:from "../supabase/js/client.js";
+advertise\index.html:12:<link rel="stylesheet" href="../css/style.css">
+advertise\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+advertise\index.html:74:import {supabase} from "../supabase/js/client.js";
+advertiser\dashboard\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+advertiser\dashboard\index.html:11:<link rel="stylesheet" href="/css/navigation.css">
+advertiser\dashboard\index.html:43:from "../../supabase/js/client.js";
+advertiser\index.html:13:<link rel="stylesheet" href="../css/style.css">
+advertiser\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+advertiser\index.html:81:from "../supabase/js/client.js";
+affiliate\index.html:9:<link rel="stylesheet" href="../css/style.css">
+affiliate\index.html:54:from "../supabase/js/client.js";
+ai-tutor\index.html:9:<link rel="stylesheet" href="../css/style.css">
+ai-tutor\index.html:61:from "../supabase/js/client.js";
+analytics\index.html:9:<link rel="stylesheet" href="../css/style.css">
+analytics\index.html:43:from "../supabase/js/client.js";
+announcements\index.html:9:<link rel="stylesheet" href="../css/style.css">
+announcements\index.html:51:from "../supabase/js/client.js";
+assets\ads.html:5:<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+assistant\index.html:11:<link rel="stylesheet" href="../css/style.css">
+assistant\index.html:64:from "../supabase/js/client.js";
+audit\index.html:9:<link rel="stylesheet" href="../css/style.css">
+audit\index.html:41:from "../supabase/js/client.js";
+blog\index.html:8:<link rel="stylesheet" href="../css/style.css">
+blog\index.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+blog\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+certificates\index.html:9:<link rel="stylesheet" href="../css/style.css">
+certificates\index.html:43:from "../supabase/js/client.js";
+community\index.html:9:<link rel="stylesheet" href="../css/style.css">
+community\index.html:69:from "../supabase/js/client.js";
+components\ads.html:16:import {supabase} from "../supabase/js/client.js";
+components\language.html:14:<script src="/js/language/switcher.js"></script>
+contact\index.html:13:<link rel="stylesheet" href="../css/style.css">
+courses\ai-course.html:9:<link rel="stylesheet" href="../css/style.css">
+courses\ai-course.html:13:<link rel="stylesheet" href="/css/navigation.css">
+courses\freelancing-course.html:9:<link rel="stylesheet" href="../css/style.css">
+courses\freelancing-course.html:13:<link rel="stylesheet" href="/css/navigation.css">
+courses\index.html:13:<link rel="stylesheet" href="../css/style.css">
+courses\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+creator\index.html:9:<link rel="stylesheet" href="../css/style.css">
+creator\index.html:67:from "../supabase/js/client.js";
+dashboard\index.html:13:<link rel="stylesheet" href="../css/style.css">
+dashboard\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+dashboard\index.html:48:from "../supabase/js/client.js";
+en\academy\lessons\lesson1.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson1.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson1.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson10.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson10.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson10.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson2.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson2.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson2.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson3.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson3.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson3.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson4.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson4.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson4.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson5.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson5.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson5.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson6.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson6.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson6.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson7.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson7.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson7.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson8.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson8.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson8.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\lesson9.html:11:<script src="../../../js/academy.js"></script>
+en\academy\lessons\lesson9.html:13:<link rel="stylesheet" href="../../../css/style.css">
+en\academy\lessons\lesson9.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz1.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz1.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz10.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz10.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz2.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz2.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz3.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz3.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz4.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz4.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz5.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz5.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz6.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz6.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz7.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz7.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz8.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz8.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\lessons\quiz9.html:12:<script src="../../../js/academy.js"></script>
+en\academy\lessons\quiz9.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\academy\index.html:10:<link rel="stylesheet" href="../../css/style.css">
+en\academy\index.html:12:<script src="../../js/learning.js"></script>
+en\academy\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+en\account\index.html:11:<script src="../../js/account.js"></script>
+en\account\index.html:13:<link rel="stylesheet" href="../../css/style.css">
+en\account\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\admin\index.html:11:<script src="../../js/admin.js"></script>
+en\admin\index.html:13:<link rel="stylesheet" href="../../css/style.css">
+en\admin\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+en\business\advertise.html:11:<link rel="stylesheet" href="/css/navigation.css">
+en\certificate\index.html:13:<link rel="stylesheet" href="/css/navigation.css">
+en\dashboard\index.html:12:<script src="../../js/account.js"></script>
+en\dashboard\index.html:14:<link rel="stylesheet" href="../../css/style.css">
+en\dashboard\index.html:18:<link rel="stylesheet" href="/css/navigation.css">
+en\lessons\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+en\lessons\index.html:13:<link rel="stylesheet" href="/css/navigation.css">
+en\login\index.html:11:<link rel="stylesheet" href="../../css/style.css">
+en\login\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+en\profile\index.html:12:<link rel="stylesheet" href="../../css/style.css">
+en\profile\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+feedback\index.html:9:<link rel="stylesheet" href="../css/style.css">
+launch\index.html:9:<link rel="stylesheet" href="../css/style.css">
+launch-banner\index.html:13:<link rel="stylesheet" href="../css/style.css">
+leaderboard\index.html:9:<link rel="stylesheet" href="../css/style.css">
+leaderboard\index.html:43:from "../supabase/js/client.js";
+learning\levels\index.html:13:<link rel="stylesheet" href="../../css/style.css">
+learning\levels\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+learning\levels\index.html:115:import {supabase} from "../../supabase/js/client.js";
+learning\pages\achievements\index.html:13:<link rel="stylesheet" href="../../../css/style.css">
+learning\pages\achievements\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\achievements\index.html:41:import {supabase} from "../../../supabase/js/client.js";
+learning\pages\certificate\index.html:13:<link rel="stylesheet" href="../../../css/style.css">
+learning\pages\certificate\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\certificate\index.html:63:import {supabase} from "../../../supabase/js/client.js";
+learning\pages\lessons\lesson.html:11:<link rel="stylesheet" href="../../../css/style.css">
+learning\pages\lessons\lesson.html:15:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\lessons\lesson.html:65:import { supabase } from "../../../supabase/js/client.js";
+learning\pages\dashboard.html:8:<link rel="stylesheet" href="../../css/style.css">
+learning\pages\dashboard.html:12:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\dashboard.html:41:import {supabase} from "../../supabase/js/client.js";
+learning\pages\lesson.html:11:<link rel="stylesheet" href="../../css/style.css">
+learning\pages\lesson.html:15:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\lesson.html:60:import {supabase} from "../../supabase/js/client.js";
+learning\pages\profile.html:13:<link rel="stylesheet" href="../../css/style.css">
+learning\pages\profile.html:17:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\profile.html:46:from "../../supabase/js/client.js";
+learning\pages\quiz.html:13:<link rel="stylesheet" href="../../css/style.css">
+learning\pages\quiz.html:17:<link rel="stylesheet" href="/css/navigation.css">
+learning\pages\quiz.html:41:from "../../supabase/js/client.js";
+learning\index.html:13:<link rel="stylesheet" href="../css/style.css">
+learning\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+marketplace\sell\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+marketplace\sell\index.html:52:from "../../supabase/js/client.js";
+marketplace\index.html:9:<link rel="stylesheet" href="../css/style.css">
+marketplace\index.html:43:from "../supabase/js/client.js";
+messages\index.html:9:<link rel="stylesheet" href="../css/style.css">
+messages\index.html:69:from "../supabase/js/client.js";
+notifications\index.html:9:<link rel="stylesheet" href="../css/style.css">
+notifications\index.html:43:from "../supabase/js/client.js";
+opportunities\index.html:9:<link rel="stylesheet" href="../css/style.css">
+opportunities\index.html:53:from "../supabase/js/client.js";
+pages\admin\analytics\index.html:13:<link rel="stylesheet" href="../../../css/style.css">
+pages\admin\analytics\index.html:19:import {checkAdmin} from "/js/admin/protect.js";
+pages\admin\analytics\index.html:27:<link rel="stylesheet" href="/css/navigation.css">
+pages\admin\analytics\index.html:124:import {supabase} from "../../../supabase/js/client.js";
+pages\admin\panel\index.html:13:<link rel="stylesheet" href="../../../css/style.css">
+pages\admin\panel\index.html:19:import {checkAdmin} from "/js/admin/protect.js";
+pages\admin\panel\index.html:27:<link rel="stylesheet" href="/css/navigation.css">
+pages\admin\ads.html:13:<link rel="stylesheet" href="../../css/style.css">
+pages\admin\ads.html:15:<link rel="stylesheet" href="/css/navigation.css">
+pages\admin\ads.html:48:from "../../supabase/js/client.js";
+pages\admin\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+pages\admin\index.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\admin\index.html:19:import {checkAdmin} from "/js/admin/protect.js";
+pages\admin\index.html:27:<link rel="stylesheet" href="/css/navigation.css">
+pages\advertise\packages\index.html:12:<link rel="stylesheet" href="../../../css/style.css">
+pages\advertise\packages\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+pages\advertise\packages\index.html:99:import {supabase} from "../../../supabase/js/client.js";
+pages\advertise\index.html:12:<link rel="stylesheet" href="../../css/style.css">
+pages\advertise\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+pages\advertise\index.html:78:import {supabase} from "../../supabase/js/client.js";
+pages\auth\login.html:9:<link rel="stylesheet" href="../../css/style.css">
+pages\auth\login.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\auth\login.html:17:<link rel="stylesheet" href="/css/navigation.css">
+pages\auth\login.html:60:<script src="../../js/database.js"></script>
+pages\auth\login.html:61:<script type="module" src="../../js/auth.js"></script>
+pages\auth\register.html:9:<link rel="stylesheet" href="../../css/style.css">
+pages\auth\register.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\auth\register.html:17:<link rel="stylesheet" href="/css/navigation.css">
+pages\auth\register.html:64:<script src="../../js/database.js"></script>
+pages\auth\register.html:65:<script type="module" src="../../js/auth.js"></script>
+pages\dashboard\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+pages\dashboard\index.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\dashboard\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+pages\earn\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+pages\earn\index.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\earn\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+pages\financial\index.html:6:<link rel="stylesheet" href="../../css/style.css">
+pages\financial\index.html:7:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+pages\financial\index.html:13:<link rel="stylesheet" href="/css/navigation.css">
+payments\index.html:13:<link rel="stylesheet" href="../css/style.css">
+payments\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+payments\index.html:75:from "../supabase/js/client.js";
+premium\courses\index.html:9:<link rel="stylesheet" href="../../css/style.css">
+premium\courses\index.html:11:<link rel="stylesheet" href="/css/navigation.css">
+premium\index.html:13:<link rel="stylesheet" href="../css/style.css">
+premium\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+pricing\index.html:9:<link rel="stylesheet" href="../css/style.css">
+pricing-plans\index.html:9:<link rel="stylesheet" href="../css/style.css">
+profile\index.html:9:<link rel="stylesheet" href="../css/style.css">
+profile\index.html:70:from "../supabase/js/client.js";
+recommendations\index.html:9:<link rel="stylesheet" href="../css/style.css">
+recommendations\index.html:41:from "../supabase/js/client.js";
+referral\index.html:9:<link rel="stylesheet" href="../css/style.css">
+referral\index.html:63:from "../supabase/js/client.js";
+reviews\index.html:9:<link rel="stylesheet" href="../css/style.css">
+reviews\index.html:77:from "../supabase/js/client.js";
+roadmap\index.html:9:<link rel="stylesheet" href="../css/style.css">
+roadmap\index.html:41:from "../supabase/js/client.js";
+search\index.html:9:<link rel="stylesheet" href="../css/style.css">
+search\index.html:53:from "../supabase/js/client.js";
+student\index.html:9:<link rel="stylesheet" href="../css/style.css">
+student\index.html:37:from "../supabase/js/client.js";
+support\index.html:9:<link rel="stylesheet" href="../css/style.css">
+ur\academy\lessons\lesson1.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson1.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson1.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson10.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson10.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson10.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson2.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson2.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson2.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson3.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson3.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson3.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson4.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson4.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson4.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson5.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson5.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson5.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson6.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson6.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson6.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson7.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson7.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson7.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson8.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson8.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson8.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\lesson9.html:13:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\lesson9.html:15:<link rel="stylesheet" href="../../../css/style.css">
+ur\academy\lessons\lesson9.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz1.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz1.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz10.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz10.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz2.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz2.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz3.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz3.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz4.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz4.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz5.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz5.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz6.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz6.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz7.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz7.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz8.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz8.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\lessons\quiz9.html:12:<script src="../../../js/academy.js"></script>
+ur\academy\lessons\quiz9.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\academy\index.html:12:<link rel="stylesheet" href="../../css/style.css">
+ur\academy\index.html:14:<script src="../../js/learning.js"></script>
+ur\academy\index.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\account\index.html:11:<script src="../../js/account.js"></script>
+ur\account\index.html:13:<link rel="stylesheet" href="../../css/style.css">
+ur\account\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+ur\admin\index.html:14:<script src="../../js/admin.js"></script>
+ur\admin\index.html:17:<link rel="stylesheet" href="../../css/style.css">
+ur\admin\index.html:22:<link rel="stylesheet" href="/css/navigation.css">
+ur\blog\index.html:11:<link rel="stylesheet" href="../../css/style.css">
+ur\blog\index.html:15:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+ur\blog\index.html:19:<link rel="stylesheet" href="/css/navigation.css">
+ur\business\advertise.html:13:<link rel="stylesheet" href="/css/navigation.css">
+ur\certificate\index.html:14:<link rel="stylesheet" href="/css/navigation.css">
+ur\dashboard\index.html:14:<script src="../../js/account.js"></script>
+ur\dashboard\index.html:17:<link rel="stylesheet" href="../../css/style.css">
+ur\dashboard\index.html:22:<link rel="stylesheet" href="/css/navigation.css">
+ur\lessons\index.html:10:<link rel="stylesheet" href="../../css/style.css">
+ur\lessons\index.html:14:<link rel="stylesheet" href="/css/navigation.css">
+ur\login\index.html:13:<link rel="stylesheet" href="../../css/style.css">
+ur\login\index.html:17:<link rel="stylesheet" href="/css/navigation.css">
+ur\pages\dashboard.html:7:<link rel="stylesheet" href="../../css/style.css">
+ur\pages\dashboard.html:8:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+ur\pages\dashboard.html:14:<link rel="stylesheet" href="/css/navigation.css">
+ur\pages\earn.html:7:<link rel="stylesheet" href="../../css/style.css">
+ur\pages\earn.html:8:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+ur\pages\earn.html:14:<link rel="stylesheet" href="/css/navigation.css">
+ur\profile\index.html:12:<link rel="stylesheet" href="../../css/style.css">
+ur\profile\index.html:16:<link rel="stylesheet" href="/css/navigation.css">
+ur\index.html:8:<link rel="stylesheet" href="../css/style.css">
+ur\index.html:9:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+ur\index.html:15:<link rel="stylesheet" href="/css/navigation.css">
+ur\terms.html:8:<link rel="stylesheet" href="../css/style.css">
+ur\terms.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+ur\terms.html:15:<link rel="stylesheet" href="/css/navigation.css">
+verify\index.html:9:<link rel="stylesheet" href="../css/style.css">
+verify\index.html:38:from "../supabase/js/client.js";
+404.html:8:<link rel="stylesheet" href="/css/style.css">
+404.html:11:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+404.html:15:<link rel="stylesheet" href="/css/navigation.css">
+about.html:7:<link rel="stylesheet" href="css/style.css">
+about.html:8:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+about.html:14:<link rel="stylesheet" href="/css/navigation.css">
+ads-component.html:20:import {supabase} from "./supabase/js/client.js";
+contact.html:7:<link rel="stylesheet" href="css/style.css">
+contact.html:8:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+contact.html:14:<link rel="stylesheet" href="/css/navigation.css">
+index.html:15:<link rel="stylesheet" href="css/style.css">
+index.html:17:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+index.html:23:<link rel="stylesheet" href="/css/navigation.css">
+privacy.html:7:<link rel="stylesheet" href="css/style.css">
+privacy.html:8:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+privacy.html:14:<link rel="stylesheet" href="/css/navigation.css">
+status.html:9:<link rel="stylesheet" href="../css/style.css">
+terms.html:11:<link rel="stylesheet" href="css/style.css">
+terms.html:15:<script async 
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
+terms.html:19:<link rel="stylesheet" href="/css/navigation.css">
+
+

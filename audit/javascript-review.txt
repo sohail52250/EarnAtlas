@@ -1,0 +1,13 @@
+﻿
+js\admin\protect.js:24:const {data, error}=await supabase
+js\admin\protect.js:36:if(error || !data || data.role!=="admin"){
+js\auth.js:26:const {data,error}=await supabase.auth.signUp({
+js\auth.js:36:if(error){
+js\auth.js:38:alert(error.message);
+js\auth.js:70:const {data,error}=await supabase.auth.signInWithPassword({
+js\auth.js:80:if(error){
+js\auth.js:82:alert(error.message);
+js\database.js:4:console.log("Saving user:",user);
+js\database.js:31:return null;
+
+
