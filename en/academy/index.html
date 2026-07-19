@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>EarnAtlas Academy</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<script src="../../js/learning.js"></script>
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Academy
+</h1>
+
+
+<div class="card">
+
+<h2>
+Lesson 1: Introduction to Online Earning
+</h2>
+
+
+<p>
+Learn the basics of freelancing, remote work and digital skills.
+</p>
+
+
+<button onclick="completeLesson('lesson1')">
+Complete Lesson
+</button>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Lesson 2: Building Your First Skill
+</h2>
+
+
+<p id="lock">
+🔒 Complete Lesson 1 first
+</p>
+
+
+<script>
+
+if(checkUnlock("lesson1")){
+
+document.getElementById("lock").innerHTML=
+'<a href="lesson2.html">Open Lesson 2</a>';
+
+}
+
+</script>
+
+
+</div>
+
+
+<a href="../../ur/academy/">
+اردو
+</a>
+
+
+</body>
+
+</html>
