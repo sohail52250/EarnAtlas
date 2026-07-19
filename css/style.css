@@ -705,3 +705,17 @@ body{
     align-items:center;
 }
 
+
+body{
+    direction:rtl;
+    text-align:center;
+}
+
+h1,p,a{
+    text-align:center;
+}
+
+.navbar{
+    direction:rtl;
+}
+
