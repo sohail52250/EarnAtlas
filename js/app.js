@@ -1,41 +1,69 @@
-const search = document.querySelector('.search-box');
+async function loadOpportunities(){
 
-if(search){
+const container=document.querySelector('.opportunities');
 
-search.addEventListener('keyup', function(){
+if(!container) return;
 
-let value = search.value.toLowerCase();
 
-document.querySelectorAll('.opportunity-card')
-.forEach(card=>{
+const response=await fetch('../../data/opportunities.json');
 
-card.style.display =
-card.innerText.toLowerCase()
-.includes(value)
-? 'block'
-: 'none';
+const data=await response.json();
+
+
+container.innerHTML='';
+
+
+data.forEach(item=>{
+
+container.innerHTML += 
+
+<div class="opportunity-card">
+
+<span class="tag">
+
+</span>
+
+<h2>
+
+</h2>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+<button class="save-btn">
+Save
+</button>
+
+</div>
+
+;
 
 });
 
-});
 
 }
 
-document.querySelectorAll('.save-btn')
-.forEach(button=>{
 
-button.addEventListener('click',()=>{
+loadOpportunities();
 
-button.classList.toggle('saved');
 
-if(button.classList.contains('saved')){
-button.innerText='Saved';
+document.addEventListener('click',function(e){
+
+if(e.target.classList.contains('save-btn')){
+
+e.target.classList.toggle('saved');
+
+e.target.innerText =
+e.target.classList.contains('saved')
+? 'Saved'
+: 'Save';
+
 }
-else{
-button.innerText='Save';
-}
-
-});
 
 });
 
