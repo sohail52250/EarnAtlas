@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Referral Rewards</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Referral Rewards
+</h1>
+
+
+<h2>
+دوستوں کو مدعو کریں اور انعام حاصل کریں
+</h2>
+
+
+<div id="box">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadReferral(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+let {data}=await supabase
+
+.from("referrals")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.single();
+
+
+
+if(!data){
+
+
+let code=
+
+"EARN"+Math.random()
+
+.toString(36)
+
+.substring(2,8)
+
+.toUpperCase();
+
+
+
+await supabase
+
+.from("referrals")
+
+.insert({
+
+user_id:user.id,
+
+referral_code:code
+
+});
+
+
+
+data={
+
+referral_code:code,
+
+referred_users:0,
+
+reward_points:0
+
+};
+
+
+}
+
+
+
+document.getElementById("box").innerHTML=
+
+`
+
+<div class="card">
+
+<h3>
+
+Your Referral Code:
+
+${data.referral_code}
+
+</h3>
+
+
+<p>
+
+Friends Joined:
+
+${data.referred_users}
+
+</p>
+
+
+<p>
+
+Reward Points:
+
+${data.reward_points}
+
+</p>
+
+
+</div>
+
+`;
+
+
+
+}
+
+
+loadReferral();
+
+
+</script>
+
+
+</body>
+
+</html>
