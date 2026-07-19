@@ -1,78 +1,97 @@
-
-function registerUser(){
-
-let user={
-
-name:document.getElementById('name').value,
-
-email:document.getElementById('email').value
-
-};
+﻿import { supabase } from "../supabase/js/client.js";
 
 
-saveUser(user);\n\nlocalStorage.setItem(
-'earnatlas_user',
-JSON.stringify(user)
-);
+window.registerUser = async function(){
 
 
-alert('Account created successfully');
+const email =
+document.getElementById("email").value;
 
-window.location.href='../dashboard/index.html';
+
+const password =
+document.getElementById("password").value;
+
+
+
+if(!email || !password){
+
+alert("Enter email and password");
+
+return;
+
+}
+
+
+
+const {data,error}=await supabase.auth.signUp({
+
+email:email,
+
+password:password
+
+});
+
+
+
+if(error){
+
+alert(error.message);
+
+return;
 
 }
 
 
 
-function loginUser(){
-
-let user=
-localStorage.getItem('earnatlas_user');
+alert("Account created successfully");
 
 
-if(user){
 
-alert('Login successful');
+window.location.href="../../learning/pages/dashboard.html";
 
-window.location.href='../dashboard/index.html';
-
-}
-
-else{
-
-alert('Please register first');
-
-}
 
 }
 
 
-function loadProfile(){
-
-let user =
-localStorage.getItem('earnatlas_user');
 
 
-if(user){
-
-let data =
-JSON.parse(user);
+window.loginUser = async function(){
 
 
-let nameBox =
-document.querySelector('.profile-name');
+const email =
+document.getElementById("email").value;
 
 
-if(nameBox){
+const password =
+document.getElementById("password").value;
 
-nameBox.innerText=data.name;
+
+
+const {data,error}=await supabase.auth.signInWithPassword({
+
+email,
+
+password
+
+});
+
+
+
+if(error){
+
+alert(error.message);
+
+return;
 
 }
 
-}
+
+
+alert("Login successful");
+
+
+window.location.href="../../learning/pages/dashboard.html";
+
 
 }
-
-
-loadProfile();
 
