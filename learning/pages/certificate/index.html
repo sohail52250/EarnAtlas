@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Certificate</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h1>
+EarnAtlas Certificate
+</h1>
+
+
+<h2 id="student">
+Checking progress...
+</h2>
+
+
+<p id="status"></p>
+
+
+<button onclick="window.print()">
+Print Certificate
+</button>
+
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase} from "../../../supabase/js/client.js";
+
+
+
+async function checkCertificate(){
+
+
+const {data:userData}=await supabase.auth.getUser();
+
+
+const user=userData.user;
+
+
+
+if(!user){
+
+location.href="../../../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {data:lessons}=await supabase
+
+.from("lessons")
+
+.select("id");
+
+
+
+const {data:progress}=await supabase
+
+.from("user_progress")
+
+.select("*")
+
+.eq("user_id",user.id);
+
+
+
+let completed=0;
+
+
+progress.forEach(p=>{
+
+if(p.completed){
+
+completed++;
+
+}
+
+});
+
+
+
+let percent=Math.round(
+(completed/lessons.length)*100
+);
+
+
+
+document.getElementById("student").innerText=
+"Student: "+user.email;
+
+
+
+if(percent===100){
+
+
+document.getElementById("status").innerHTML=
+
+
+
+<h2>
+🎓 Congratulations!
+</h2>
+
+<p>
+You have successfully completed EarnAtlas Online Earning Course.
+</p>
+
+;
+
+
+
+}
+
+else{
+
+
+document.getElementById("status").innerHTML=
+
+
+
+<p>
+Course Progress: %
+</p>
+
+<p>
+Complete all lessons to unlock certificate.
+</p>
+
+;
+
+}
+
+
+}
+
+
+
+checkCertificate();
+
+
+</script>
+
+
+</body>
+
+</html>
