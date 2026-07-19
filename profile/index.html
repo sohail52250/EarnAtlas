@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Profile</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+My Profile
+</h1>
+
+
+<h2>
+میرا پروفائل
+</h2>
+
+
+
+<div class="card">
+
+
+<input id="name"
+placeholder="Name">
+
+
+<textarea id="bio"
+placeholder="Bio"></textarea>
+
+
+<input id="skills"
+placeholder="Skills">
+
+
+<input id="avatar"
+placeholder="Avatar URL">
+
+
+
+<button onclick="saveProfile()">
+
+Save Profile
+
+</button>
+
+
+
+<p id="msg"></p>
+
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.saveProfile=async function(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+await supabase
+
+.from("profiles")
+
+.upsert({
+
+id:user.id,
+
+name:
+
+document.getElementById("name").value,
+
+bio:
+
+document.getElementById("bio").value,
+
+skills:
+
+document.getElementById("skills").value,
+
+avatar_url:
+
+document.getElementById("avatar").value
+
+});
+
+
+
+document.getElementById("msg").innerText=
+
+"Profile saved";
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>

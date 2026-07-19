@@ -4,17 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>EarnAtlas Student Center</title>
+<title>Student Profile</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#2563eb">
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -22,16 +15,11 @@
 
 
 <h1>
-Student Achievement Center
+Student Profile
 </h1>
 
 
-<h2>
-طلبہ کی کامیابیاں
-</h2>
-
-
-<div id="stats">
+<div id="profile">
 
 Loading...
 
@@ -48,101 +36,62 @@ from "../supabase/js/client.js";
 
 
 
-async function loadStats(){
+async function load(){
 
 
-const {data:{user}}=
+let id=
 
-await supabase.auth.getUser();
+new URLSearchParams(location.search)
 
-
-
-if(!user){
-
-location.href="../pages/auth/login.html";
-
-return;
-
-}
+.get("id");
 
 
 
-let {data}=await supabase
+const {data}=await supabase
 
-.from("student_stats")
+.from("profiles")
 
 .select("*")
 
-.eq("user_id",user.id)
+.eq("id",id)
 
 .single();
 
 
 
-if(!data){
+document.getElementById("profile").innerHTML=
 
-
-await supabase
-
-.from("student_stats")
-
-.insert({
-
-user_id:user.id,
-
-points:10,
-
-streak:1,
-
-badges:"Starter"
-
-});
-
-
-data={
-
-points:10,
-
-streak:1,
-
-badges:"Starter"
-
-};
-
-
-}
-
-
-
-document.getElementById("stats").innerHTML=
-
-
+`
 
 <div class="card">
 
-<h3>
-Points: 
-</h3>
+<h2>
+${data.name}
+</h2>
 
 
-<h3>
-Learning Streak:  days
-</h3>
+<img src="${data.avatar_url}" width="120">
 
 
-<h3>
-Badges: 
-</h3>
+<p>
+${data.bio}
+</p>
+
+
+<p>
+Skills:
+${data.skills}
+</p>
 
 
 </div>
 
-;
+`;
 
 }
 
 
-loadStats();
+load();
 
 
 </script>
@@ -151,5 +100,3 @@ loadStats();
 </body>
 
 </html>
-
-
