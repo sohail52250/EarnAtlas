@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Lesson</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+</head>
+
+
+<body>
+
+<h1 id="title">
+Loading...
+</h1>
+
+
+<div class="card">
+
+<h2>
+English
+</h2>
+
+<p id="english">
+</p>
+
+
+<h2>
+اردو
+</h2>
+
+<p id="urdu">
+</p>
+
+
+</div>
+
+
+<a id="quiz">
+Take Quiz
+</a>
+
+
+<script type="module">
+
+import { supabase } from "../../../supabase/js/client.js";
+
+
+const id =
+Number(new URLSearchParams(location.search).get("id"));
+
+
+async function loadLesson(){
+
+
+const {data} =
+await supabase
+.from("lessons")
+.select("*")
+.eq("id",id)
+.single();
+
+
+
+if(!data){
+
+document.body.innerHTML="Lesson not found";
+return;
+
+}
+
+
+
+document.getElementById("title").innerText =
+data.title_en+" / "+data.title_ur;
+
+
+document.getElementById("english").innerText =
+data.content_en;
+
+
+document.getElementById("urdu").innerText =
+data.content_ur;
+
+
+document.getElementById("quiz").href =
+"../quiz.html?id="+id;
+
+
+}
+
+
+
+loadLesson();
+
+
+</script>
+
+
+</body>
+
+</html>
