@@ -1,0 +1,101 @@
+﻿<div id="advertisements">
+
+<h2>
+Sponsored Businesses
+</h2>
+
+<p>
+Loading ads...
+</p>
+
+</div>
+
+
+<script type="module">
+
+import {supabase} from "../supabase/js/client.js";
+
+
+async function loadAds(){
+
+
+const {data,error}=await supabase
+
+.from("advertisements")
+
+.select("*")
+
+.eq("status","approved")
+
+.order("created_at",{ascending:false});
+
+
+
+if(error){
+
+return;
+
+}
+
+
+
+let html="";
+
+
+if(!data || data.length===0){
+
+document.getElementById("advertisements").innerHTML=
+
+"<h3>No sponsored businesses yet.</h3>";
+
+return;
+
+}
+
+
+
+data.forEach(ad=>{
+
+
+html+=
+
+<div class="card">
+
+<h3>
+
+</h3>
+
+
+<p>
+
+</p>
+
+
+<p>
+
+</p>
+
+
+<a href="" target="_blank">
+Visit Website
+</a>
+
+
+</div>
+
+;
+
+});
+
+
+
+document.getElementById("advertisements").innerHTML=html;
+
+
+}
+
+
+loadAds();
+
+
+</script>

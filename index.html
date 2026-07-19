@@ -171,7 +171,21 @@ Join EarnAtlas
 </footer>
 
 
-<div class="ad-container"></div>`n<a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a>`n</body>
+<div class="ad-container"></div>`n<a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a>`n
+
+<div id="ads-area"></div>
+
+<script>
+
+fetch("/components/ads.html")
+
+.then(r=>r.text())
+
+.then(t=>document.getElementById("ads-area").innerHTML=t);
+
+</script>
+
+</body>
 
 </html>
 
@@ -274,6 +288,7 @@ Open Dashboard
 </p>
 
 </footer>
+
 
 
 
