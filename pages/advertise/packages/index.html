@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Advertising Packages</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Choose Your Advertising Package
+</h1>
+
+
+<div class="card">
+
+<h2>
+Free
+</h2>
+
+<p>
+Basic business listing
+</p>
+
+<button onclick="selectPackage('Free')">
+Choose
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Featured
+</h2>
+
+<p>
+Highlighted listing on EarnAtlas
+</p>
+
+<button onclick="selectPackage('Featured')">
+Choose
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Premium
+</h2>
+
+<p>
+Homepage promotion and priority placement
+</p>
+
+<button onclick="selectPackage('Premium')">
+Choose
+</button>
+
+</div>
+
+
+
+<p id="result"></p>
+
+
+
+<script type="module">
+
+import {supabase} from "../../../supabase/js/client.js";
+
+
+
+window.selectPackage=async function(packageName){
+
+
+
+const {data:userData}=await supabase.auth.getUser();
+
+
+const user=userData.user;
+
+
+
+if(!user){
+
+location.href="../../../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {error}=await supabase
+
+.from("advertisements")
+
+.update({
+
+package:packageName,
+
+status:"pending"
+
+})
+
+.eq("email",user.email);
+
+
+
+if(error){
+
+document.getElementById("result").innerText=
+error.message;
+
+}
+
+else{
+
+document.getElementById("result").innerText=
+"Package selected: "+packageName;
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
