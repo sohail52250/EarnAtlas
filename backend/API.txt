@@ -1,0 +1,20 @@
+﻿EarnAtlas Backend API
+
+Future endpoints:
+
+POST /users/register
+
+POST /users/login
+
+GET /lessons
+
+POST /progress/update
+
+POST /quiz/result
+
+POST /advertisement/request
+
+GET /admin/users
+
+GET /admin/business
+
