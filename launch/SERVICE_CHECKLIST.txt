@@ -1,0 +1,28 @@
+﻿EarnAtlas Production Services Checklist
+
+
+[X] Supabase Database
+
+[X] Authentication
+
+[X] Website Deployment
+
+[X] Learning Platform
+
+
+Configure before scaling:
+
+[ ] Custom domain
+
+[ ] Email provider
+
+[ ] Payment provider
+
+[ ] Analytics tracking ID
+
+[ ] Error monitoring
+
+[ ] Backup strategy
+
+[ ] Customer support workflow
+
