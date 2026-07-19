@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Course Roadmap</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1 data-en="EarnAtlas Learning Roadmap"
+data-ur="EarnAtlas سیکھنے کا راستہ">
+EarnAtlas Learning Roadmap
+</h1>
+
+
+
+<div class="card">
+
+
+<h2>
+🟢 Beginner Level
+</h2>
+
+
+<p data-en="Learn online earning basics, safety and digital skills."
+data-ur="آن لائن کمائی کی بنیادی معلومات، حفاظت اور ڈیجیٹل مہارتیں سیکھیں۔">
+Learn online earning basics
+</p>
+
+
+<a href="../pages/dashboard.html">
+Start Beginner Course
+</a>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>
+🟡 Intermediate Level
+</h2>
+
+
+<p>
+Build profiles, find clients and improve skills.
+</p>
+
+
+<a href="../pages/dashboard.html">
+Continue Intermediate
+</a>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>
+🔴 Advanced Level
+</h2>
+
+
+<p>
+Create digital income systems and online businesses.
+</p>
+
+
+<a href="../pages/dashboard.html">
+Continue Advanced
+</a>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Course Progress
+</h2>
+
+<div id="progress">
+Loading...
+</div>
+
+
+</div>
+
+
+
+<script type="module">
+
+import {supabase} from "../../supabase/js/client.js";
+
+
+
+async function loadProgress(){
+
+
+const {data:userData}=await supabase.auth.getUser();
+
+
+if(!userData.user){
+
+return;
+
+}
+
+
+const {data:lessons}=await supabase
+
+.from("lessons")
+
+.select("id");
+
+
+
+const {data:done}=await supabase
+
+.from("user_progress")
+
+.select("*")
+
+.eq("user_id",userData.user.id)
+
+.eq("completed",true);
+
+
+
+let percent=Math.round(
+(done.length/lessons.length)*100
+);
+
+
+
+document.getElementById("progress").innerHTML=
+
+percent+"% Completed";
+
+
+
+}
+
+
+
+loadProgress();
+
+
+
+</script>
+
+
+</body>
+
+</html>
