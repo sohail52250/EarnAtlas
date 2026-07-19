@@ -1,0 +1,11 @@
+﻿{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "EarnAtlas",
+  "url": "https://earn-atlas.vercel.app/",
+  "description": "Learn online earning, freelancing, AI skills and digital income step by step.",
+  "inLanguage": [
+    "en",
+    "ur"
+  ]
+}
