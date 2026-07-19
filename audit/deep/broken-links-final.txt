@@ -1,0 +1,3 @@
+F:\EarnAtlas\certificates\index.html -> ../verify/?id=${c.certificate_id}
+F:\EarnAtlas\learning\pages\dashboard.html -> quiz.html?id=${lesson.id}
+F:\EarnAtlas\status.html -> ../css/style.css
