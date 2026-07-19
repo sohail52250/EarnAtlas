@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Certificates</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Certificates
+</h1>
+
+
+<h2>
+کامیابی کے سرٹیفکیٹس
+</h2>
+
+
+
+<div id="certificates">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadCertificates(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {data}=await supabase
+
+.from("certificates")
+
+.select("*")
+
+.eq("user_id",user.id);
+
+
+
+let html="";
+
+
+
+if(!data || data.length===0){
+
+
+html=
+
+`
+
+<div class="card">
+
+<p>
+Complete courses to earn certificates.
+</p>
+
+<p>
+کورس مکمل کریں اور سرٹیفکیٹ حاصل کریں۔
+</p>
+
+</div>
+
+`;
+
+}
+
+else{
+
+
+data.forEach(c=>{
+
+
+html+=`
+
+<div class="card">
+
+<h3>
+${c.course_name}
+</h3>
+
+
+<p>
+Certificate ID:
+${c.certificate_id}
+</p>
+
+
+<p>
+Issued:
+${c.issued_at}
+</p>
+
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+
+document.getElementById("certificates").innerHTML=html;
+
+
+}
+
+
+
+loadCertificates();
+
+
+</script>
+
+
+</body>
+
+</html>

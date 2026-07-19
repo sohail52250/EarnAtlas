@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Certificate Verification</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Verify EarnAtlas Certificate
+</h1>
+
+
+<h2>
+سرٹیفکیٹ تصدیق
+</h2>
+
+
+<input id="code" placeholder="Certificate ID">
+
+
+<button onclick="verify()">
+
+Verify
+
+</button>
+
+
+<div id="result">
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.verify=async function(){
+
+
+let code=document
+
+.getElementById("code")
+
+.value;
+
+
+
+let {data}=await supabase
+
+.from("certificates")
+
+.select("*")
+
+.eq("certificate_id",code)
+
+.single();
+
+
+
+if(data){
+
+
+document.getElementById("result").innerHTML=
+
+`
+
+<h3>
+Valid Certificate
+</h3>
+
+<p>
+${data.student_name}
+</p>
+
+<p>
+${data.course_name}
+</p>
+
+`;
+
+}
+
+else{
+
+
+document.getElementById("result").innerHTML=
+
+"Certificate not found";
+
+
+}
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
