@@ -7,31 +7,35 @@
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/about.html</loc>
+<loc>https://earn-atlas.vercel.app/learning/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/contact.html</loc>
+<loc>https://earn-atlas.vercel.app/courses/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/privacy.html</loc>
+<loc>https://earn-atlas.vercel.app/assistant/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/terms.html</loc>
+<loc>https://earn-atlas.vercel.app/marketplace/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/blog/</loc>
+<loc>https://earn-atlas.vercel.app/dashboard/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/ur/</loc>
+<loc>https://earn-atlas.vercel.app/advertiser/</loc>
 </url>
 
 <url>
-<loc>https://earn-atlas.vercel.app/ur/blog/</loc>
+<loc>https://earn-atlas.vercel.app/about/</loc>
+</url>
+
+<url>
+<loc>https://earn-atlas.vercel.app/contact/</loc>
 </url>
 
 </urlset>
