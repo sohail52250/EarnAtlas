@@ -1,0 +1,23 @@
+﻿EarnAtlas Production Security Checklist
+
+
+[ ] Enable Supabase Row Level Security
+
+[ ] Confirm admin roles
+
+[ ] Protect private user data
+
+[ ] Validate form inputs
+
+[ ] Enable HTTPS
+
+[ ] Review database policies
+
+[ ] Monitor logs
+
+[ ] Backup database regularly
+
+[ ] Test authentication flow
+
+[ ] Remove unused API keys
+
