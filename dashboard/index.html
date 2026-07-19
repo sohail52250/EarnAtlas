@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Student Dashboard</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Student Dashboard
+</h1>
+
+
+<h2>
+طلبہ کا ڈیش بورڈ
+</h2>
+
+
+
+<div id="dashboard">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadDashboard(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+let email=user.email;
+
+
+
+let {data:stats}=await supabase
+
+.from("student_stats")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.single();
+
+
+
+let {data:membership}=await supabase
+
+.from("memberships")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.single();
+
+
+
+let {data:certificates}=await supabase
+
+.from("certificates")
+
+.select("*")
+
+.eq("user_id",user.id);
+
+
+
+let {data:notifications}=await supabase
+
+.from("notifications")
+
+.select("*")
+
+.eq("user_id",user.id);
+
+
+
+document.getElementById("dashboard").innerHTML=
+
+`
+
+<div class="card">
+
+<h3>
+Profile
+</h3>
+
+<p>
+${email}
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Points
+</h3>
+
+<p>
+${stats?.points || 0}
+</p>
+
+
+<h3>
+Streak
+</h3>
+
+<p>
+${stats?.streak || 0} days
+</p>
+
+
+<h3>
+Badges
+</h3>
+
+<p>
+${stats?.badges || "Starter"}
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Membership
+</h3>
+
+<p>
+${membership?.plan || "Free"}
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Certificates
+</h3>
+
+<p>
+${certificates?.length || 0}
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Notifications
+</h3>
+
+<p>
+${notifications?.length || 0}
+</p>
+
+</div>
+
+
+
+<a href="../learning/">
+
+Continue Learning
+
+</a>
+
+`;
+
+
+
+}
+
+
+
+loadDashboard();
+
+
+</script>
+
+
+</body>
+
+</html>
