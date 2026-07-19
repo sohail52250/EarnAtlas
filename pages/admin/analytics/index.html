@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Analytics</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Admin Analytics
+</h1>
+
+
+
+<div class="card">
+
+<h2>
+Students
+</h2>
+
+<p id="students">
+Loading...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Lessons
+</h2>
+
+<p id="lessons">
+Loading...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Completed Lessons
+</h2>
+
+<p id="completed">
+Loading...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Advertisements
+</h2>
+
+<p id="ads">
+Loading...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+Approved Ads
+</h2>
+
+<p id="approved">
+Loading...
+</p>
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase} from "../../../supabase/js/client.js";
+
+
+
+async function loadAnalytics(){
+
+
+
+const lessons =
+await supabase
+.from("lessons")
+.select("*",{count:"exact"});
+
+
+
+const progress =
+await supabase
+.from("user_progress")
+.select("*",{count:"exact"});
+
+
+
+const ads =
+await supabase
+.from("advertisements")
+.select("*",{count:"exact"});
+
+
+
+const approved =
+await supabase
+.from("advertisements")
+.select("*",{count:"exact"})
+.eq("status","approved");
+
+
+
+document.getElementById("lessons").innerText =
+lessons.count || 0;
+
+
+
+document.getElementById("completed").innerText =
+progress.count || 0;
+
+
+
+document.getElementById("ads").innerText =
+ads.count || 0;
+
+
+
+document.getElementById("approved").innerText =
+approved.count || 0;
+
+
+
+document.getElementById("students").innerText =
+"Available through Authentication Users";
+
+
+}
+
+
+
+loadAnalytics();
+
+
+
+</script>
+
+
+</body>
+
+</html>
