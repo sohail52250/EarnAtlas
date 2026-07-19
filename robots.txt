@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://earn-atlas.vercel.app/sitemap.xml
