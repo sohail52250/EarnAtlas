@@ -668,3 +668,17 @@ text-decoration:none;
 body{
     font-family:""Poppins"",""Arial"";
 }
+
+.ads-container{
+    max-width:900px;
+    margin:40px auto;
+    padding:25px;
+    text-align:center;
+}
+
+.ad-placeholder{
+    background:#f8fafc;
+    border:1px dashed #6366f1;
+    padding:40px;
+    border-radius:16px;
+}
