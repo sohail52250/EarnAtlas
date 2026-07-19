@@ -682,3 +682,14 @@ body{
     padding:40px;
     border-radius:16px;
 }
+
+.ad-container{
+    width:100%;
+    max-width:900px;
+    margin:30px auto;
+    min-height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
