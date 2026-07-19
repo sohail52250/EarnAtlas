@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Achievements</title>
+
+<link rel="stylesheet" href="../../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+🏆 EarnAtlas Achievements
+</h1>
+
+
+
+<div id="badges">
+
+Checking achievements...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase} from "../../../supabase/js/client.js";
+
+
+
+async function loadAchievements(){
+
+
+const {data:userData}=await supabase.auth.getUser();
+
+
+const user=userData.user;
+
+
+
+if(!user){
+
+location.href="../../../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {data:lessons}=await supabase
+
+.from("user_progress")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.eq("completed",true);
+
+
+
+let count=lessons.length;
+
+
+
+let html="";
+
+
+
+if(count>=1){
+
+html+=
+
+<div class="card">
+
+<h2>
+🥉 Beginner Badge
+</h2>
+
+<p>
+Completed first lesson
+</p>
+
+</div>
+
+;
+
+}
+
+
+
+if(count>=5){
+
+html+=
+
+<div class="card">
+
+<h2>
+🥈 Intermediate Badge
+</h2>
+
+<p>
+Completed 5 lessons
+</p>
+
+</div>
+
+;
+
+}
+
+
+
+if(count>=8){
+
+html+=
+
+<div class="card">
+
+<h2>
+🥇 Advanced Badge
+</h2>
+
+<p>
+Completed advanced learning path
+</p>
+
+</div>
+
+;
+
+}
+
+
+
+if(count===0){
+
+html=
+
+"Complete lessons to unlock badges.";
+
+}
+
+
+
+document.getElementById("badges").innerHTML=html;
+
+
+
+}
+
+
+
+loadAchievements();
+
+
+</script>
+
+
+</body>
+
+</html>
