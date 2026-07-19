@@ -1,49 +1,33 @@
 ﻿<!DOCTYPE html>
-
 <html>
 
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>EarnAtlas Ad Admin</title>
+<title>EarnAtlas Admin Ads</title>
 
 <link rel="stylesheet" href="../../css/style.css">
-
-
-
-<script type="module">
-
-import {checkAdmin} from "/js/admin/protect.js";
-
-checkAdmin();
-
-</script>
 
 </head>
 
 
 <body>
 
-<div id="language-area"></div>
-
-<script>
-
-fetch('/components/language.html')
-.then(r=>r.text())
-.then(t=>document.getElementById('language-area').innerHTML=t)
-
-</script>
-
 
 <h1>
-Advertisement Management
+EarnAtlas Advertisement Admin
 </h1>
+
+<h2>
+اشتہارات کا انتظام
+</h2>
 
 
 <div id="ads">
-Loading advertisements...
+Loading...
 </div>
 
 
@@ -53,12 +37,60 @@ Loading advertisements...
 import {supabase} from "../../supabase/js/client.js";
 
 
+async function checkAdmin(){
+
+
+const {data:{user}} =
+await supabase.auth.getUser();
+
+
+if(!user){
+
+location.href="../auth/login.html";
+
+return;
+
+}
+
+
+
+const {data:profile}=await supabase
+
+.from("profiles")
+
+.select("role")
+
+.eq("id",user.id)
+
+.single();
+
+
+
+if(!profile || profile.role!=="admin"){
+
+document.body.innerHTML=
+"<h1>Access Denied</h1>";
+
+return;
+
+}
+
+
+loadAds();
+
+}
+
+
+
 async function loadAds(){
 
 
 const {data,error}=await supabase
+
 .from("advertisements")
+
 .select("*")
+
 .order("created_at",{ascending:false});
 
 
@@ -84,31 +116,17 @@ html+=
 
 <div class="card">
 
-<h3>
+<h3></h3>
 
-</h3>
-
-
-<p>
-
-</p>
-
+<p></p>
 
 <p>
 
 </p>
 
-
 <p>
-
+Status: 
 </p>
-
-
-<p>
-Status:
-
-</p>
-
 
 
 <button onclick="updateAd(,'approved')">
@@ -125,6 +143,7 @@ Reject
 
 ;
 
+
 });
 
 
@@ -139,10 +158,11 @@ window.updateAd=async function(id,status){
 
 
 await supabase
+
 .from("advertisements")
-.update({
-status:status
-})
+
+.update({status:status})
+
 .eq("id",id);
 
 
@@ -154,23 +174,12 @@ loadAds();
 
 
 
-loadAds();
+checkAdmin();
 
 
 </script>
 
 
-
-
-<br>
-
-<a href="panel/index.html">
-⚙️ Admin Panel
-</a>
-
 </body>
 
 </html>
-
-
-
