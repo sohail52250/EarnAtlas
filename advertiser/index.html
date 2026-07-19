@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Advertise</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Advertise With EarnAtlas
+</h1>
+
+
+<h2>
+اپنے کاروبار کی تشہیر کریں
+</h2>
+
+
+
+<div class="card">
+
+
+<input id="business"
+placeholder="Business Name">
+
+
+<input id="category"
+placeholder="Category">
+
+
+<textarea id="description"
+placeholder="Business Description"></textarea>
+
+
+<input id="website"
+placeholder="Website">
+
+
+<input id="email"
+placeholder="Email">
+
+
+
+<button onclick="submitAd()">
+
+Submit Advertisement
+
+</button>
+
+
+</div>
+
+
+
+<div id="msg">
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.submitAd=async function(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {error}=await supabase
+
+.from("advertisements")
+
+.insert({
+
+user_id:user.id,
+
+business_name:
+document.getElementById("business").value,
+
+category:
+document.getElementById("category").value,
+
+description:
+document.getElementById("description").value,
+
+website:
+document.getElementById("website").value,
+
+email:
+document.getElementById("email").value
+
+});
+
+
+
+if(error){
+
+document.getElementById("msg").innerText=
+
+error.message;
+
+return;
+
+}
+
+
+
+document.getElementById("msg").innerText=
+
+"Advertisement submitted for approval";
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
