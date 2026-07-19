@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas AI Tutor</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas AI Tutor
+</h1>
+
+
+<h2>
+ذہین استاد
+</h2>
+
+
+
+<div class="card">
+
+
+<textarea id="question"
+
+placeholder="Ask your learning question">
+
+</textarea>
+
+
+
+<button onclick="askTutor()">
+
+Ask Tutor
+
+</button>
+
+
+
+<div id="answer">
+
+</div>
+
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+window.askTutor=async function(){
+
+
+let q=
+
+document.getElementById("question").value;
+
+
+
+let answer=
+
+"Practice daily, improve your skills and complete lessons step by step.";
+
+
+
+if(q.toLowerCase().includes("freelance")){
+
+answer=
+
+"Create a portfolio, learn a skill and apply for beginner projects.";
+
+}
+
+
+if(q.toLowerCase().includes("ai")){
+
+answer=
+
+"Learn AI tools, automation and prompt skills.";
+
+}
+
+
+
+document.getElementById("answer")
+
+.innerText=
+
+answer;
+
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(user){
+
+
+await supabase
+
+.from("ai_tutor_sessions")
+
+.insert({
+
+user_id:user.id,
+
+question:q,
+
+answer:answer
+
+});
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
