@@ -1,0 +1,496 @@
+﻿Folder PATH listing
+Volume serial number is 140E-3CCC
+F:.
+|   .gitignore
+|   404.html
+|   about.html
+|   ads-component.html
+|   ads.txt
+|   blog.html
+|   contact.html
+|   DATABASE_SETUP.md
+|   index.html
+|   manifest.json
+|   netlify.toml
+|   privacy.html
+|   project-tree.txt
+|   README.md
+|   README_BACKEND.md
+|   robots.txt
+|   seo-schema.json
+|   service-worker.js
+|   sitemap.xml
+|   status.html
+|   sw.js
+|   terms.html
+|   
++---.netlify
+|   |   netlify.toml
+|   |   state.json
+|   |   
+|   +---functions-internal
+|   \---v1
+|       \---functions
++---.vercel
+|       project.json
+|       README.txt
+|       
++---about
+|       index.html
+|       
++---admin
+|   |   index.html
+|   |   
+|   +---business
+|   |       index.html
+|   |       
+|   \---lessons
++---admin-panel
+|       index.html
+|       
++---advertise
+|       index.html
+|       
++---advertiser
+|   |   index.html
+|   |   
+|   \---dashboard
+|           index.html
+|           
++---affiliate
+|       index.html
+|       README.txt
+|       
++---ai-tutor
+|       index.html
+|       README.txt
+|       
++---analytics
+|       index.html
+|       tracker.js
+|       
++---announcements
+|       index.html
+|       
++---assets
+|   |   ads.html
+|   |   
+|   +---icons
+|   \---images
++---assistant
+|       index.html
+|       
++---audit
+|       index.html
+|       README.txt
+|       
++---automation
+|       activity.js
+|       README.txt
+|       
++---backend
+|   |   .env.example
+|   |   API.txt
+|   |   database.json
+|   |   
+|   +---api
+|   +---config
+|   +---models
+|   \---services
++---blog
+|       index.html
+|       
++---certificates
+|       index.html
+|       
++---community
+|       index.html
+|       README.txt
+|       
++---components
+|       ads.html
+|       footer.html
+|       header.html
+|       language.html
+|       
++---config
+|       .env.example
+|       supabase.js
+|       
++---contact
+|       index.html
+|       
++---courses
+|       ai-course.html
+|       freelancing-course.html
+|       index.html
+|       
++---creator
+|       index.html
+|       README.txt
+|       
++---css
+|       navigation.css
+|       responsive.css
+|       style.css
+|       
++---dashboard
+|       index.html
+|       
++---data
+|       advertisers.json
+|       database.json
+|       opportunities.json
+|       
++---database
+|       schema.sql
+|       
++---EarnAtlas
+|   |   about.html
+|   |   blog.html
+|   |   contact.html
+|   |   index.html
+|   |   README.md
+|   |   
+|   +---assets
+|   |   +---icons
+|   |   +---images
+|   |   \---logo
+|   +---css
+|   |       responsive.css
+|   |       style.css
+|   |       
+|   +---js
+|   |       app.js
+|   |       
+|   \---pages
+|       +---ai-jobs
+|       +---earn
+|       +---finance
+|       +---remote-jobs
+|       \---surveys
++---en
+|   +---academy
+|   |   |   index.html
+|   |   |   
+|   |   \---lessons
+|   |           lesson1.html
+|   |           lesson10.html
+|   |           lesson2.html
+|   |           lesson3.html
+|   |           lesson4.html
+|   |           lesson5.html
+|   |           lesson6.html
+|   |           lesson7.html
+|   |           lesson8.html
+|   |           lesson9.html
+|   |           quiz1.html
+|   |           quiz10.html
+|   |           quiz2.html
+|   |           quiz3.html
+|   |           quiz4.html
+|   |           quiz5.html
+|   |           quiz6.html
+|   |           quiz7.html
+|   |           quiz8.html
+|   |           quiz9.html
+|   |           
+|   +---account
+|   |       index.html
+|   |       
+|   +---admin
+|   |       index.html
+|   |       
+|   +---blog
+|   +---business
+|   |       advertise.html
+|   |       
+|   +---certificate
+|   |       index.html
+|   |       
+|   +---dashboard
+|   |       index.html
+|   |       
+|   +---lessons
+|   |       index.html
+|   |       
+|   +---login
+|   |       index.html
+|   |       
+|   +---profile
+|   |       index.html
+|   |       
+|   \---tools
++---feedback
+|       index.html
+|       
++---icons
++---js
+|   |   academy.js
+|   |   account.js
+|   |   admin.js
+|   |   app.js
+|   |   auth.js
+|   |   database.js
+|   |   learning.js
+|   |   
+|   +---admin
+|   |       protect.js
+|   |       
+|   \---language
+|           switcher.js
+|           
++---launch
+|   |   check.ps1
+|   |   CHECKLIST.md
+|   |   index.html
+|   |   MONETIZATION_CHECKLIST.txt
+|   |   PUBLIC_LAUNCH_CHECKLIST.txt
+|   |   REPORT.txt
+|   |   SERVICE_CHECKLIST.txt
+|   |   
+|   \---review
+|           FINAL_REPORT.txt
+|           git-status.txt
+|           
++---launch-banner
+|       index.html
+|       
++---leaderboard
+|       index.html
+|       
++---learning
+|   |   index.html
+|   |   lessons.js
+|   |   
+|   +---levels
+|   |       index.html
+|   |       
+|   \---pages
+|       |   dashboard.html
+|       |   lesson.html
+|       |   profile.html
+|       |   quiz.html
+|       |   
+|       +---achievements
+|       |       index.html
+|       |       
+|       +---certificate
+|       |       index.html
+|       |       
+|       \---lessons
+|               lesson.html
+|               
++---marketplace
+|   |   index.html
+|   |   
+|   \---sell
+|           index.html
+|           
++---messages
+|       index.html
+|       README.txt
+|       
++---monitoring
+|       logger.js
+|       README.txt
+|       
++---notifications
+|       index.html
+|       
++---opportunities
+|       index.html
+|       README.txt
+|       
++---pages
+|   +---admin
+|   |   |   ads.html
+|   |   |   index.html
+|   |   |   
+|   |   +---analytics
+|   |   |       index.html
+|   |   |       
+|   |   \---panel
+|   |           index.html
+|   |           
+|   +---advertise
+|   |   |   index.html
+|   |   |   
+|   |   \---packages
+|   |           index.html
+|   |           
+|   +---ai-jobs
+|   +---auth
+|   |       login.html
+|   |       register.html
+|   |       
+|   +---dashboard
+|   |       index.html
+|   |       
+|   +---earn
+|   |       index.html
+|   |       
+|   +---finance
+|   +---financial
+|   |       index.html
+|   |       
+|   +---remote-jobs
+|   \---surveys
++---payments
+|       index.html
+|       
++---premium
+|   |   index.html
+|   |   
+|   \---courses
+|           index.html
+|           
++---pricing
+|       index.html
+|       
++---pricing-plans
+|       index.html
+|       
++---profile
+|       index.html
+|       
++---pwa
+|       README.txt
+|       
++---realtime
+|       README.txt
+|       realtime.js
+|       
++---recommendations
+|       index.html
+|       
++---referral
+|       index.html
+|       
++---reviews
+|       index.html
+|       README.txt
+|       
++---roadmap
+|       index.html
+|       README.txt
+|       
++---search
+|       index.html
+|       README.txt
+|       
++---security
+|       CHECKLIST.txt
+|       validation.js
+|       
++---student
+|       index.html
+|       
++---supabase
+|   +---js
+|   |       client.js
+|   |       config.js
+|   |       
+|   \---sql
+|           advertisements.sql
+|           advertiser.sql
+|           ad_packages.sql
+|           affiliate.sql
+|           ai_assistant.sql
+|           ai_tutor.sql
+|           analytics.sql
+|           audit.sql
+|           automation.sql
+|           certificates.sql
+|           community.sql
+|           creators.sql
+|           database.sql
+|           gamification.sql
+|           learning.sql
+|           marketplace.sql
+|           memberships.sql
+|           messages.sql
+|           monetization.sql
+|           monitoring.sql
+|           more_lessons.sql
+|           notifications.sql
+|           opportunities.sql
+|           payments.sql
+|           profiles.sql
+|           profiles_upgrade.sql
+|           quiz_results.sql
+|           realtime.sql
+|           referrals.sql
+|           reviews.sql
+|           roadmap.sql
+|           search.sql
+|           security.sql
+|           student_stats.sql
+|           
++---support
+|       index.html
+|       
++---ur
+|   |   index.html
+|   |   terms.html
+|   |   
+|   +---academy
+|   |   |   index.html
+|   |   |   
+|   |   \---lessons
+|   |           lesson1.html
+|   |           lesson10.html
+|   |           lesson2.html
+|   |           lesson3.html
+|   |           lesson4.html
+|   |           lesson5.html
+|   |           lesson6.html
+|   |           lesson7.html
+|   |           lesson8.html
+|   |           lesson9.html
+|   |           quiz1.html
+|   |           quiz10.html
+|   |           quiz2.html
+|   |           quiz3.html
+|   |           quiz4.html
+|   |           quiz5.html
+|   |           quiz6.html
+|   |           quiz7.html
+|   |           quiz8.html
+|   |           quiz9.html
+|   |           
+|   +---account
+|   |       index.html
+|   |       
+|   +---admin
+|   |       index.html
+|   |       
+|   +---blog
+|   |       index.html
+|   |       
+|   +---business
+|   |       advertise.html
+|   |       
+|   +---certificate
+|   |       index.html
+|   |       
+|   +---dashboard
+|   |       index.html
+|   |       
+|   +---lessons
+|   |       index.html
+|   |       
+|   +---login
+|   |       index.html
+|   |       
+|   +---pages
+|   |       dashboard.html
+|   |       earn.html
+|   |       
+|   +---profile
+|   |       index.html
+|   |       
+|   \---tools
+\---verify
+        index.html
+        
