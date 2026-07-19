@@ -1,3 +1,1 @@
-# Google AdSense
-# Replace YOUR_PUBLISHER_ID after approval
-google.com, pub-YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

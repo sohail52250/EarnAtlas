@@ -693,3 +693,15 @@ body{
     align-items:center;
 }
 
+
+.ad-container{
+    width:100%;
+    max-width:900px;
+    min-height:150px;
+    margin:40px auto;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
