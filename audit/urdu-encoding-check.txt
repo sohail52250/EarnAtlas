@@ -1,0 +1,174 @@
+﻿
+ur\academy\lessons\lesson1.html:9:EarnAtlas Ø³Ø¨Ù‚ 1
+ur\academy\lessons\lesson1.html:38:Ø³Ø¨Ù‚ 1
+ur\academy\lessons\lesson1.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 1
+ur\academy\lessons\lesson1.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson1.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson10.html:9:EarnAtlas Ø³Ø¨Ù‚ 10
+ur\academy\lessons\lesson10.html:38:Ø³Ø¨Ù‚ 10
+ur\academy\lessons\lesson10.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 10
+ur\academy\lessons\lesson10.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson10.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson2.html:9:EarnAtlas Ø³Ø¨Ù‚ 2
+ur\academy\lessons\lesson2.html:38:Ø³Ø¨Ù‚ 2
+ur\academy\lessons\lesson2.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 2
+ur\academy\lessons\lesson2.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson2.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson3.html:9:EarnAtlas Ø³Ø¨Ù‚ 3
+ur\academy\lessons\lesson3.html:38:Ø³Ø¨Ù‚ 3
+ur\academy\lessons\lesson3.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 3
+ur\academy\lessons\lesson3.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson3.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson4.html:9:EarnAtlas Ø³Ø¨Ù‚ 4
+ur\academy\lessons\lesson4.html:38:Ø³Ø¨Ù‚ 4
+ur\academy\lessons\lesson4.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 4
+ur\academy\lessons\lesson4.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson4.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson5.html:9:EarnAtlas Ø³Ø¨Ù‚ 5
+ur\academy\lessons\lesson5.html:38:Ø³Ø¨Ù‚ 5
+ur\academy\lessons\lesson5.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 5
+ur\academy\lessons\lesson5.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson5.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson6.html:9:EarnAtlas Ø³Ø¨Ù‚ 6
+ur\academy\lessons\lesson6.html:38:Ø³Ø¨Ù‚ 6
+ur\academy\lessons\lesson6.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 6
+ur\academy\lessons\lesson6.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson6.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson7.html:9:EarnAtlas Ø³Ø¨Ù‚ 7
+ur\academy\lessons\lesson7.html:38:Ø³Ø¨Ù‚ 7
+ur\academy\lessons\lesson7.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 7
+ur\academy\lessons\lesson7.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson7.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson8.html:9:EarnAtlas Ø³Ø¨Ù‚ 8
+ur\academy\lessons\lesson8.html:38:Ø³Ø¨Ù‚ 8
+ur\academy\lessons\lesson8.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 8
+ur\academy\lessons\lesson8.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson8.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\lessons\lesson9.html:9:EarnAtlas Ø³Ø¨Ù‚ 9
+ur\academy\lessons\lesson9.html:38:Ø³Ø¨Ù‚ 9
+ur\academy\lessons\lesson9.html:45:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©ÛŒ Ù…ÛØ§Ø±Øª 9
+ur\academy\lessons\lesson9.html:51:ÛŒÛ Ø³Ø¨Ù‚ Ø¢Ù¾ Ú©Ùˆ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¢Ù…Ø¯Ù†ÛŒ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ø§ÛÙ… Ù…Ø±Ø§ØÙ„ 
+Ø³Ú©Ú¾Ø§ØªØ§ ÛÛ’Û”
+ur\academy\lessons\lesson9.html:57:Ù¹ÛŒØ³Ù¹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\academy\index.html:10:<title>EarnAtlas Ø§Ú©ÛŒÚˆÙ…ÛŒ</title>
+ur\academy\index.html:38:EarnAtlas Ø§Ú©ÛŒÚˆÙ…ÛŒ
+ur\academy\index.html:46:Ø³Ø¨Ù‚ 1: Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©Ø§ ØªØ¹Ø§Ø±Ù
+ur\academy\index.html:51:ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ØŒ Ø±ÛŒÙ…ÙˆÙ¹ ÙˆØ±Ú© Ø§ÙˆØ± ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ù…ÛØ§Ø±ØªÛŒÚº Ø³ÛŒÚ©Ú¾ÛŒÚºÛ”
+ur\academy\index.html:57:Ø³Ø¨Ù‚ Ù…Ú©Ù…Ù„ Ú©Ø±ÛŒÚº
+ur\academy\index.html:70:Ø³Ø¨Ù‚ 2: Ù¾ÛÙ„ÛŒ Ù…ÛØ§Ø±Øª Ø¨Ù†Ø§Ù†Ø§
+ur\academy\index.html:75:ðŸ”’ Ù¾ÛÙ„Û’ Ø³Ø¨Ù‚ Ú©Ùˆ Ù…Ú©Ù…Ù„ Ú©Ø±ÛŒÚº
+ur\account\index.html:8:Ø§Ú©Ø§Ø¤Ù†Ù¹ Ø¨Ù†Ø§Ø¦ÛŒÚº
+ur\account\index.html:36:EarnAtlas Ø§Ú©Ø§Ø¤Ù†Ù¹
+ur\account\index.html:40:<input id="name" placeholder="Ù†Ø§Ù…">
+ur\account\index.html:46:<input id="email" placeholder="Ø§ÛŒ Ù…ÛŒÙ„">
+ur\account\index.html:54:Ø±Ø¬Ø³Ù¹Ø± Ú©Ø±ÛŒÚº
+ur\admin\index.html:10:EarnAtlas Ø§ÛŒÚˆÙ…Ù†
+ur\admin\index.html:41:EarnAtlas Ø§ÛŒÚˆÙ…Ù† Ù¾ÛŒÙ†Ù„
+ur\admin\index.html:47:Ù†ÛŒØ§ Ø³Ø¨Ù‚ Ø´Ø§Ù…Ù„ Ú©Ø±ÛŒÚº
+ur\admin\index.html:52:placeholder="Ø³Ø¨Ù‚ Ú©Ø§ Ø¹Ù†ÙˆØ§Ù†">
+ur\admin\index.html:59:placeholder="Ø³Ø¨Ù‚ Ú©ÛŒ ØªÙØµÛŒÙ„">
+ur\admin\index.html:68:Ø³Ø¨Ù‚ Ø´Ø§Ù…Ù„ Ú©Ø±ÛŒÚº
+ur\admin\index.html:75:ØªÙ…Ø§Ù… Ø§Ø³Ø¨Ø§Ù‚
+ur\blog\index.html:9:<title>EarnAtlas Ø§Ø±Ø¯Ùˆ Ø¨Ù„Ø§Ú¯</title>
+ur\blog\index.html:40:EarnAtlas Ø§Ø±Ø¯Ùˆ
+ur\blog\index.html:44:<li><a href="../index.html">ÛÙˆÙ…</a></li>
+ur\blog\index.html:45:<li><a href="../pages/earn.html">Ú©Ù…Ø§Ø¦ÛŒ</a></li>
+ur\blog\index.html:46:<li><a href="index.html">Ø¨Ù„Ø§Ú¯</a></li>
+ur\blog\index.html:56:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©Û’ Ø±ÛÙ†Ù…Ø§ Ù…Ø¶Ø§Ù…ÛŒÙ†
+ur\blog\index.html:60:ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ØŒ AIØŒ Ø±ÛŒÙ…ÙˆÙ¹ ÙˆØ±Ú© Ø§ÙˆØ± ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ø¢Ù…Ø¯Ù†ÛŒ Ú©Û’ Ø¨Ø§Ø±Û’ Ù…ÛŒÚº 
+Ù…Ø¹Ù„ÙˆÙ…Ø§Øª ØØ§ØµÙ„ Ú©Ø±ÛŒÚºÛ”
+ur\blog\index.html:73:ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ Ú©ÛŒØ³Û’ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚºØŸ
+ur\blog\index.html:77:Ø§Ù¾Ù†ÛŒ Ù…ÛØ§Ø±Øª Ú©Û’ Ù…Ø·Ø§Ø¨Ù‚ Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ø§Ù… ØªÙ„Ø§Ø´ Ú©Ø±ÛŒÚº Ø§ÙˆØ± Ú¯Ú¾Ø± 
+Ø¨ÛŒÙ¹Ú¾Û’ Ú©Ù…Ø§Ø¦ÛŒ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚºÛ”
+ur\blog\index.html:87:AI Ø³Û’ Ú©Ù…Ø§Ø¦ÛŒ Ú©Û’ Ù…ÙˆØ§Ù‚Ø¹
+ur\blog\index.html:91:Ù…ØµÙ†ÙˆØ¹ÛŒ Ø°ÛØ§Ù†Øª Ú©Û’ Ù¹ÙˆÙ„Ø² Ø§Ø³ØªØ¹Ù…Ø§Ù„ Ú©Ø±Ú©Û’ Ù†Ø¦Û’ ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ù…ÙˆØ§Ù‚Ø¹ Ø
+Ø§ØµÙ„ Ú©Ø±ÛŒÚºÛ”
+ur\blog\index.html:101:Ø±ÛŒÙ…ÙˆÙ¹ Ø¬Ø§Ø¨Ø²
+ur\blog\index.html:105:Ø¯Ù†ÛŒØ§ Ø¨Ú¾Ø± Ù…ÛŒÚº Ø¢Ù† Ù„Ø§Ø¦Ù† Ù…Ù„Ø§Ø²Ù…ØªÙˆÚº Ø§ÙˆØ± Ú©Ø§Ù… Ú©Û’ Ù…ÙˆØ§Ù‚Ø¹ ØªÙ„Ø§Ø´ 
+Ú©Ø±ÛŒÚºÛ”
+ur\business\advertise.html:8:EarnAtlas Ù¾Ø± Ø§Ø´ØªÛØ§Ø±
+ur\business\advertise.html:32:EarnAtlas Ù¾Ø± Ø§Ø´ØªÛØ§Ø± Ø¯ÛŒÚº
+ur\business\advertise.html:39:<input placeholder="Ú©Ø§Ø±ÙˆØ¨Ø§Ø± Ú©Ø§ Ù†Ø§Ù…">
+ur\business\advertise.html:41:<input placeholder="Ø±Ø§Ø¨Ø·Û Ø´Ø®Øµ">
+ur\business\advertise.html:43:<input placeholder="Ø§ÛŒ Ù…ÛŒÙ„">
+ur\business\advertise.html:45:<input placeholder="ÙÙˆÙ† Ù†Ù…Ø¨Ø±">
+ur\business\advertise.html:47:<input placeholder="ÙˆÛŒØ¨ Ø³Ø§Ø¦Ù¹">
+ur\business\advertise.html:50:<textarea placeholder="Ú©Ø§Ø±ÙˆØ¨Ø§Ø± Ú©ÛŒ ØªÙØµÛŒÙ„"></textarea>
+ur\business\advertise.html:54:Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ø¬Ù…Ø¹ Ú©Ø±ÛŒÚº
+ur\certificate\index.html:9:EarnAtlas Ø³Ø±Ù¹ÛŒÙÚ©ÛŒÙ¹
+ur\certificate\index.html:33:Ú©ÙˆØ±Ø³ Ù…Ú©Ù…Ù„ Ú©Ø±Ù†Û’ Ú©Ø§ Ø³Ø±Ù¹ÛŒÙÚ©ÛŒÙ¹
+ur\certificate\index.html:38:Ø¢Ù¾ Ù†Û’ EarnAtlas Ø§Ú©ÛŒÚˆÙ…ÛŒ Ú©Ø§Ù…ÛŒØ§Ø¨ÛŒ Ø³Û’ Ù…Ú©Ù…Ù„ Ú©Ø± Ù„ÛŒ ÛÛ’Û”
+ur\dashboard\index.html:10:Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù… ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ
+ur\dashboard\index.html:43:Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù… ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ
+ur\dashboard\index.html:53:Ú©ÙˆØ±Ø³ Ú©ÛŒ Ù¾ÛŒØ´ Ø±ÙØª
+ur\dashboard\index.html:60:Ø³Ø¨Ù‚ 1 âœ…
+ur\dashboard\index.html:67:Ø³Ø¨Ù‚ 2 ðŸ”’
+ur\dashboard\index.html:74:Ø³Ø¨Ù‚ 3 ðŸ”’
+ur\dashboard\index.html:81:Ø³ÛŒÚ©Ú¾Ù†Ø§ Ø¬Ø§Ø±ÛŒ Ø±Ú©Ú¾ÛŒÚº
+ur\lessons\index.html:8:<title>EarnAtlas Ø³ÛŒÚ©Ú¾Ù†Û’ Ú©Ø§ Ø±Ø§Ø³ØªÛ</title>
+ur\lessons\index.html:34:EarnAtlas Ø§Ø±Ø¯Ùˆ
+ur\lessons\index.html:47:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ù‚Ø¯Ù… Ø¨Û Ù‚Ø¯Ù… Ø³ÛŒÚ©Ú¾ÛŒÚº
+ur\lessons\index.html:51:Ø³Ø¨Ù‚ Ù…Ú©Ù…Ù„ Ú©Ø±ÛŒÚºØŒ Ù¹ÛŒØ³Ù¹ Ù¾Ø§Ø³ Ú©Ø±ÛŒÚº Ø§ÙˆØ± Ù†Ø¦ÛŒ Ù…ÛØ§Ø±ØªÛŒÚº ØØ§ØµÙ„ 
+Ú©Ø±ÛŒÚºÛ”
+ur\lessons\index.html:63:Ø³Ø¨Ù‚ 1
+ur\lessons\index.html:67:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©Ø§ ØªØ¹Ø§Ø±Ù
+ur\lessons\index.html:72:Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\lessons\index.html:81:Ø³Ø¨Ù‚ 2 ðŸ”’
+ur\lessons\index.html:85:Ù¾ÛÙ„Û’ Ø³Ø¨Ù‚ Ú©Û’ Ø¨Ø¹Ø¯ Ú©Ú¾Ù„Û’ Ú¯Ø§
+ur\login\index.html:9:EarnAtlas Ù„Ø§Ú¯ Ø§Ù†
+ur\login\index.html:36:EarnAtlas Ù„Ø§Ú¯ Ø§Ù†
+ur\login\index.html:43:<input placeholder="Ø§ÛŒ Ù…ÛŒÙ„">
+ur\login\index.html:49:<input placeholder="Ù¾Ø§Ø³ ÙˆØ±Úˆ" type="password">
+ur\login\index.html:57:Ù„Ø§Ú¯ Ø§Ù†
+ur\login\index.html:67:Ø§Ú©Ø§Ø¤Ù†Ù¹ Ø¨Ù†Ø§Ø¦ÛŒÚº
+ur\pages\dashboard.html:6:<title>EarnAtlas ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ</title>
+ur\pages\dashboard.html:31:<div class="logo">EarnAtlas Ø§Ø±Ø¯Ùˆ</div>
+ur\pages\dashboard.html:34:<li><a href="../index.html">ÛÙˆÙ…</a></li>
+ur\pages\dashboard.html:35:<li><a href="earn.html">Ú©Ù…Ø§Ø¦ÛŒ</a></li>
+ur\pages\dashboard.html:36:<li><a href="dashboard.html">ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ</a></li>
+ur\pages\dashboard.html:41:<h1>Ø¢Ù¾ Ú©Ø§ ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ</h1>
+ur\pages\dashboard.html:44:Ø§Ù¾Ù†ÛŒ Ú©Ù…Ø§Ø¦ÛŒ Ø§ÙˆØ± Ù…ÙˆØ§Ù‚Ø¹ Ú©Ùˆ ÛŒÛØ§Úº manage Ú©Ø±ÛŒÚºÛ”
+ur\pages\earn.html:6:<title>EarnAtlas Ú©Ù…Ø§Ø¦ÛŒ</title>
+ur\pages\earn.html:31:<div class="logo">EarnAtlas Ø§Ø±Ø¯Ùˆ</div>
+ur\pages\earn.html:34:<li><a href="../index.html">ÛÙˆÙ…</a></li>
+ur\pages\earn.html:35:<li><a href="earn.html">Ú©Ù…Ø§Ø¦ÛŒ</a></li>
+ur\pages\earn.html:36:<li><a href="dashboard.html">ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ</a></li>
+ur\pages\earn.html:41:<h1>Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©Û’ Ù…ÙˆØ§Ù‚Ø¹</h1>
+ur\pages\earn.html:44:ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ØŒ AI Ø§ÙˆØ± ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ú©Ø§Ù… Ú©Û’ Ù…ÙˆØ§Ù‚Ø¹ ÛŒÛØ§Úº Ø¯ÛŒÚ©Ú¾ÛŒÚºÛ”
+ur\profile\index.html:8:Ù…ÛŒØ±Ø§ Ù¾Ø±ÙˆÙØ§Ø¦Ù„
+ur\profile\index.html:35:Ù…ÛŒØ±Ø§ Ù¾Ø±ÙˆÙØ§Ø¦Ù„
+ur\profile\index.html:43:Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù… Ø§Ú©Ø§Ø¤Ù†Ù¹
+ur\profile\index.html:48:Ø¢Ù¾ Ú©ÛŒ Ø³ÛŒÚ©Ú¾Ù†Û’ Ú©ÛŒ Ù¾ÛŒØ´ Ø±ÙØª ÛŒÛØ§Úº Ø¯Ú©Ú¾Ø§Ø¦ÛŒ Ø¬Ø§Ø¦Û’ Ú¯ÛŒÛ”
+ur\index.html:7:<title>EarnAtlas Ø§Ø±Ø¯Ùˆ | Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ</title>
+ur\index.html:34:EarnAtlas Ø§Ø±Ø¯Ùˆ
+ur\index.html:38:<li><a href="index.html">ÛÙˆÙ…</a></li>
+ur\index.html:39:<li><a href="pages/earn.html">Ú©Ù…Ø§Ø¦ÛŒ</a></li>
+ur\index.html:40:<li><a href="pages/dashboard.html">ÚˆÛŒØ´ Ø¨ÙˆØ±Úˆ</a></li>
+ur\index.html:41:<li><a href="../blog.html">Ø¨Ù„Ø§Ú¯</a></li>
+ur\index.html:50:Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒ Ú©Û’ Ø¨ÛØªØ±ÛŒÙ† Ø·Ø±ÛŒÙ‚Û’
+ur\index.html:54:ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ØŒ AIØŒ Ø±ÛŒÙ…ÙˆÙ¹ Ø¬Ø§Ø¨Ø² Ø§ÙˆØ± ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ø¢Ù…Ø¯Ù†ÛŒ Ú©Û’ Ù…ÙˆØ§Ù‚Ø¹ Ø§ÛŒÚ© 
+Ø¬Ú¯ÛÛ”
+ur\index.html:58:Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº
+ur\index.html:67:<h2>ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯</h2>
+ur\index.html:68:<p>Ú¯Ú¾Ø± Ø¨ÛŒÙ¹Ú¾Û’ Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ø§Ù… Ø­Ø§ØµÙ„ Ú©Ø±ÛŒÚºÛ”</p>
+ur\index.html:73:<h2>AI Ù…ÙˆØ§Ù‚Ø¹</h2>
+ur\index.html:74:<p>AI Ù¹ÙˆÙ„Ø² Ø³Û’ Ù†Ø¦ÛŒ Ø¢Ù…Ø¯Ù†ÛŒ Ú©Û’ Ø·Ø±ÛŒÙ‚Û’Û”</p>
+ur\index.html:79:<h2>ÙÙ†Ø§Ù†Ø³</h2>
+ur\index.html:80:<p>Ø§Ù¾Ù†ÛŒ Ø¢Ù…Ø¯Ù†ÛŒ Ø§ÙˆØ± Ø§Ø®Ø±Ø§Ø¬Ø§Øª Ú©Ùˆ Ø¨ÛØªØ± Ø¨Ù†Ø§Ø¦ÛŒÚºÛ”</p>
+ur\terms.html:7:<title>EarnAtlas Ø´Ø±Ø§Ø¦Ø·</title>
+ur\terms.html:31:<h1>Ø´Ø±Ø§Ø¦Ø· Ùˆ Ø¶ÙˆØ§Ø¨Ø·</h1>
+ur\terms.html:34:EarnAtlas Ø¢Ù† Ù„Ø§Ø¦Ù† Ú©Ù…Ø§Ø¦ÛŒØŒ ÙØ±ÛŒ Ù„Ø§Ù†Ø³Ù†Ú¯ Ø§ÙˆØ± ÚˆÛŒØ¬ÛŒÙ¹Ù„ Ù…ÙˆØ§Ù‚Ø¹ Ú©Û’ Ø¨Ø§Ø±Û’ 
+Ù…ÛŒÚº Ù…Ø¹Ù„ÙˆÙ…Ø§Øª ÙØ±Ø§ÛÙ… Ú©Ø±ØªØ§ ÛÛ’Û”
+ur\terms.html:38:ÛÙ… Ø¢Ù…Ø¯Ù†ÛŒ Ú©ÛŒ Ø¶Ù…Ø§Ù†Øª Ù†ÛÛŒÚº Ø¯ÛŒØªÛ’Û” Ú©Ø§Ù…ÛŒØ§Ø¨ÛŒ Ø¢Ù¾ Ú©ÛŒ Ù…ØÙ†ØªØŒ Ù…ÛØ§Ø±Øª 
+Ø§ÙˆØ± ÙÛŒØµÙ„ÙˆÚº Ù¾Ø± Ù…Ù†ØØµØ± ÛÛ’Û”
+
+
