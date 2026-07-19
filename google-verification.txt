@@ -1,0 +1,2 @@
+﻿Google Search Console verification file.
+Replace this file content with the verification code provided by Google.
