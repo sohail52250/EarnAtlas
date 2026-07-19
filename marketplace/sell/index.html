@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Add Marketplace Item</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Sell Your Service
+</h1>
+
+
+
+<input id="title" placeholder="Title">
+
+
+<input id="category" placeholder="Category">
+
+
+<textarea id="description"
+placeholder="Description"></textarea>
+
+
+<input id="price" placeholder="Price">
+
+
+
+<button onclick="addItem()">
+
+Publish
+
+</button>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../../supabase/js/client.js";
+
+
+
+window.addItem=async function(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+await supabase
+
+.from("marketplace_items")
+
+.insert({
+
+user_id:user.id,
+
+title:
+title.value,
+
+category:
+category.value,
+
+description:
+description.value,
+
+price:
+price.value
+
+});
+
+
+
+alert("Published");
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>

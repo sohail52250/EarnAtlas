@@ -4,17 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>EarnAtlas Business Marketplace</title>
+<title>EarnAtlas Marketplace</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#2563eb">
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -22,33 +15,17 @@
 
 
 <h1>
-EarnAtlas Business Marketplace
+EarnAtlas Marketplace
 </h1>
 
 
 <h2>
-کاروباری مارکیٹ پلیس
+ڈیجیٹل مارکیٹ پلیس
 </h2>
 
 
-<p>
-Discover useful online businesses and services.
-</p>
 
-
-<p>
-آن لائن کاروبار اور خدمات تلاش کریں۔
-</p>
-
-
-
-<input id="search"
-placeholder="Search business / کاروبار تلاش کریں"
-onkeyup="filterAds()">
-
-
-
-<div id="businesses">
+<div id="items">
 
 Loading...
 
@@ -65,143 +42,77 @@ from "../supabase/js/client.js";
 
 
 
-let businesses=[];
+async function load(){
 
 
+const {data}=await supabase
 
-async function loadBusinesses(){
-
-
-const {data,error}=await supabase
-
-.from("advertisements")
+.from("marketplace_items")
 
 .select("*")
 
-.eq("status","approved");
+.order("created_at",
 
+{ascending:false});
 
-
-if(error){
-
-document.getElementById("businesses").innerHTML=
-
-error.message;
-
-return;
-
-}
-
-
-
-businesses=data;
-
-showBusinesses(businesses);
-
-
-}
-
-
-
-function showBusinesses(list){
 
 
 let html="";
 
 
-if(list.length===0){
-
-html="<p>No businesses found</p>";
-
-}
+data?.forEach(item=>{
 
 
-list.forEach(ad=>{
-
-
-html+=
+html+=`
 
 <div class="card">
 
+<h3>
 
-<h2>
+${item.title}
 
-</h2>
+</h3>
 
 
 <p>
-Category:
+
+${item.description}
 
 </p>
 
 
 <p>
 
+Price:
+${item.price}
+
 </p>
 
 
 <p>
 
+${item.type}
+
 </p>
-
-
-<a href=""
-target="_blank">
-
-Visit Website
-
-</a>
 
 
 </div>
 
-;
+`;
 
 
 
 });
 
 
-document.getElementById("businesses").innerHTML=html;
+document.getElementById("items").innerHTML=html;
 
 
 }
 
 
 
-window.filterAds=function(){
-
-
-let value=document
-
-.getElementById("search")
-
-.value
-
-.toLowerCase();
-
-
-
-let filtered=businesses.filter(x=>
-
-(x.business_name || "")
-
-.toLowerCase()
-
-.includes(value)
-
-);
-
-
-
-showBusinesses(filtered);
-
-
-}
-
-
-
-loadBusinesses();
+load();
 
 
 </script>
@@ -210,5 +121,3 @@ loadBusinesses();
 </body>
 
 </html>
-
-
