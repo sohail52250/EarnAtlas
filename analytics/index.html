@@ -4,17 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>EarnAtlas Analytics</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#2563eb">
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -22,17 +15,17 @@
 
 
 <h1>
-EarnAtlas Analytics
+EarnAtlas Analytics Dashboard
 </h1>
 
 
 <h2>
-ویب سائٹ تجزیات
+اعداد و شمار
 </h2>
 
 
 
-<div id="report">
+<div id="stats">
 
 Loading...
 
@@ -49,114 +42,89 @@ from "../supabase/js/client.js";
 
 
 
-async function loadReport(){
+async function loadStats(){
 
 
-const {data:{user}}=
+const users=
 
-await supabase.auth.getUser();
-
-
-
-if(!user){
-
-location.href="../pages/auth/login.html";
-
-return;
-
-}
-
-
-
-const {data:profile}=await supabase
+await supabase
 
 .from("profiles")
-
-.select("role")
-
-.eq("id",user.id)
-
-.single();
-
-
-
-if(!profile || profile.role!=="admin"){
-
-document.body.innerHTML=
-
-"<h1>Access Denied</h1>";
-
-return;
-
-}
-
-
-
-const {data}=await supabase
-
-.from("analytics_events")
 
 .select("*");
 
 
 
-let visits=data.filter(
+const lessons=
 
-x=>x.event_type==="visit"
+await supabase
 
-).length;
+.from("user_progress")
 
-
-
-let ads=data.filter(
-
-x=>x.event_type==="ad_view"
-
-).length;
+.select("*");
 
 
 
-let lessons=data.filter(
+const products=
 
-x=>x.event_type==="lesson_complete"
+await supabase
 
-).length;
+.from("marketplace_items")
+
+.select("*");
 
 
 
-document.getElementById("report").innerHTML=
+document.getElementById("stats")
 
+.innerHTML=
+
+`
+
+<div class="card">
+
+<h3>
+Total Users
+</h3>
+
+<p>
+${users.data?.length || 0}
+</p>
+
+</div>
 
 
 <div class="card">
 
 <h3>
-Page Visits: 
+Learning Records
 </h3>
 
-
-<h3>
-Advertisement Views: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6687674736927382"
-crossorigin="anonymous"></script>
-</h3>
-
-
-<h3>
-Completed Lessons: 
-</h3>
-
+<p>
+${lessons.data?.length || 0}
+</p>
 
 </div>
 
-;
 
+<div class="card">
 
+<h3>
+Marketplace Items
+</h3>
+
+<p>
+${products.data?.length || 0}
+</p>
+
+</div>
+
+`;
 
 }
 
 
-
-loadReport();
+loadStats();
 
 
 </script>
@@ -165,5 +133,3 @@ loadReport();
 </body>
 
 </html>
-
-
