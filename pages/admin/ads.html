@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Ad Admin</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+
+<body>
+
+<h1>
+Advertisement Management
+</h1>
+
+
+<div id="ads">
+Loading advertisements...
+</div>
+
+
+
+<script type="module">
+
+import {supabase} from "../../supabase/js/client.js";
+
+
+async function loadAds(){
+
+
+const {data,error}=await supabase
+.from("advertisements")
+.select("*")
+.order("created_at",{ascending:false});
+
+
+
+if(error){
+
+document.getElementById("ads").innerHTML=
+error.message;
+
+return;
+
+}
+
+
+
+let html="";
+
+
+data.forEach(ad=>{
+
+
+html+=
+
+<div class="card">
+
+<h3>
+
+</h3>
+
+
+<p>
+
+</p>
+
+
+<p>
+
+</p>
+
+
+<p>
+
+</p>
+
+
+<p>
+Status:
+
+</p>
+
+
+
+<button onclick="updateAd(,'approved')">
+Approve
+</button>
+
+
+<button onclick="updateAd(,'rejected')">
+Reject
+</button>
+
+
+</div>
+
+;
+
+});
+
+
+document.getElementById("ads").innerHTML=html;
+
+
+}
+
+
+
+window.updateAd=async function(id,status){
+
+
+await supabase
+.from("advertisements")
+.update({
+status:status
+})
+.eq("id",id);
+
+
+
+loadAds();
+
+
+}
+
+
+
+loadAds();
+
+
+</script>
+
+
+</body>
+
+</html>
