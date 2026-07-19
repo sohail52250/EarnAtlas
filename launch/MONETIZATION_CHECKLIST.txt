@@ -1,0 +1,20 @@
+﻿EarnAtlas Monetization Setup
+
+
+[X] Subscription database
+
+[X] Payment records
+
+[X] Creator earnings
+
+
+Before accepting real payments:
+
+[ ] Connect payment provider
+
+[ ] Add webhook verification
+
+[ ] Test payments
+
+[ ] Enable invoices
+
