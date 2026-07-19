@@ -10,7 +10,7 @@ email:document.getElementById('email').value
 };
 
 
-localStorage.setItem(
+saveUser(user);\n\nlocalStorage.setItem(
 'earnatlas_user',
 JSON.stringify(user)
 );
