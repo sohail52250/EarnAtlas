@@ -1,22 +1,23 @@
 ﻿{
-  "name": "EarnAtlas",
-  "short_name": "EarnAtlas",
-  "description": "Learn online earning, freelancing and AI skills step by step.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
-  "lang": "en",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+"name": "EarnAtlas",
+"short_name": "EarnAtlas",
+"description": "Learn digital skills, AI tools and online earning.",
+"start_url": "/",
+"display": "standalone",
+"background_color": "#2563eb",
+"theme_color": "#2563eb",
+"orientation": "portrait",
+
+"icons": [
+{
+"src": "/icons/icon-192.png",
+"sizes": "192x192",
+"type": "image/png"
+},
+{
+"src": "/icons/icon-512.png",
+"sizes": "512x512",
+"type": "image/png"
+}
+]
 }
