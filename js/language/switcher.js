@@ -53,3 +53,4 @@ window.addEventListener(
 "DOMContentLoaded",
 translatePage
 );
+

@@ -42,3 +42,4 @@ response || fetch(event.request)
 );
 
 });
+

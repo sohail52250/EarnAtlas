@@ -1,7 +1,7 @@
-
+﻿
 async function saveUser(user){
 
-console.log("Saving user:",user);
+
 
 /*
 Supabase insert example:
@@ -31,4 +31,5 @@ return data;
 return null;
 
 }
+
 

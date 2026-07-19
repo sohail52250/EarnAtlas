@@ -1,0 +1,10 @@
+F:\EarnAtlas\certificates\index.html -> ../verify/?id=${c.certificate_id}
+F:\EarnAtlas\en\academy\index.html -> lesson2.html
+F:\EarnAtlas\en\lessons\index.html -> lesson-1.html
+F:\EarnAtlas\learning\pages\dashboard.html -> quiz.html?id=${lesson.id}
+F:\EarnAtlas\opportunities\index.html -> ${job.link}
+F:\EarnAtlas\pages\admin\analytics\index.html -> panel/index.html
+F:\EarnAtlas\pages\admin\panel\index.html -> panel/index.html
+F:\EarnAtlas\student\index.html -> ${data.avatar_url}
+F:\EarnAtlas\ur\lessons\index.html -> lesson-1.html
+F:\EarnAtlas\status.html -> ../css/style.css

@@ -32,3 +32,4 @@ export function limitText(text,max){
 return text.substring(0,max);
 
 }
+
