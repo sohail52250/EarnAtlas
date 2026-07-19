@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -7,12 +8,10 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>EarnAtlas Admin Ads</title>
+<title>Advertisement Approval</title>
 
 <link rel="stylesheet" href="../../css/style.css">
 
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#2563eb">
 </head>
 
 
@@ -20,30 +19,40 @@
 
 
 <h1>
-EarnAtlas Advertisement Admin
+Advertisement Approval Panel
 </h1>
 
+
 <h2>
-اشتہارات کا انتظام
+اشتہارات کی منظوری
 </h2>
 
 
+
 <div id="ads">
+
 Loading...
+
 </div>
 
 
 
 <script type="module">
 
-import {supabase} from "../../supabase/js/client.js";
+
+import {supabase}
+
+from "../../supabase/js/client.js";
+
 
 
 async function checkAdmin(){
 
 
-const {data:{user}} =
+const {data:{user}}=
+
 await supabase.auth.getUser();
+
 
 
 if(!user){
@@ -71,6 +80,7 @@ const {data:profile}=await supabase
 if(!profile || profile.role!=="admin"){
 
 document.body.innerHTML=
+
 "<h1>Access Denied</h1>";
 
 return;
@@ -80,6 +90,7 @@ return;
 
 loadAds();
 
+
 }
 
 
@@ -87,66 +98,72 @@ loadAds();
 async function loadAds(){
 
 
-const {data,error}=await supabase
+const {data}=await supabase
 
 .from("advertisements")
 
 .select("*")
 
-.order("created_at",{ascending:false});
-
-
-
-if(error){
-
-document.getElementById("ads").innerHTML=
-error.message;
-
-return;
-
-}
+.eq("status","pending");
 
 
 
 let html="";
 
 
+
 data.forEach(ad=>{
 
 
-html+=
+html+=`
 
 <div class="card">
 
-<h3></h3>
 
-<p></p>
+<h3>
+${ad.business_name}
+</h3>
+
 
 <p>
-
+${ad.category}
 </p>
+
 
 <p>
-Status: 
+${ad.description}
 </p>
 
 
-<button onclick="updateAd(,'approved')">
+<p>
+${ad.email}
+</p>
+
+
+
+<button onclick="updateAd(${ad.id},'approved')">
+
 Approve
+
 </button>
 
 
-<button onclick="updateAd(,'rejected')">
+
+<button onclick="updateAd(${ad.id},'rejected')">
+
 Reject
+
 </button>
 
 
 </div>
 
-;
+`;
+
 
 
 });
+
 
 
 document.getElementById("ads").innerHTML=html;
@@ -163,13 +180,17 @@ await supabase
 
 .from("advertisements")
 
-.update({status:status})
+.update({
+
+status:status
+
+})
 
 .eq("id",id);
 
 
 
-loadAds();
+location.reload();
 
 
 }
@@ -182,8 +203,6 @@ checkAdmin();
 </script>
 
 
-<script src='../../ads-component.html'></script></body>
+</body>
 
 </html>
-
-
