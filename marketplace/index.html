@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Business Marketplace</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Business Marketplace
+</h1>
+
+
+<h2>
+کاروباری مارکیٹ پلیس
+</h2>
+
+
+<p>
+Discover useful online businesses and services.
+</p>
+
+
+<p>
+آن لائن کاروبار اور خدمات تلاش کریں۔
+</p>
+
+
+
+<input id="search"
+placeholder="Search business / کاروبار تلاش کریں"
+onkeyup="filterAds()">
+
+
+
+<div id="businesses">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+let businesses=[];
+
+
+
+async function loadBusinesses(){
+
+
+const {data,error}=await supabase
+
+.from("advertisements")
+
+.select("*")
+
+.eq("status","approved");
+
+
+
+if(error){
+
+document.getElementById("businesses").innerHTML=
+
+error.message;
+
+return;
+
+}
+
+
+
+businesses=data;
+
+showBusinesses(businesses);
+
+
+}
+
+
+
+function showBusinesses(list){
+
+
+let html="";
+
+
+if(list.length===0){
+
+html="<p>No businesses found</p>";
+
+}
+
+
+list.forEach(ad=>{
+
+
+html+=
+
+<div class="card">
+
+
+<h2>
+
+</h2>
+
+
+<p>
+Category:
+
+</p>
+
+
+<p>
+
+</p>
+
+
+<p>
+
+</p>
+
+
+<a href=""
+target="_blank">
+
+Visit Website
+
+</a>
+
+
+</div>
+
+;
+
+
+
+});
+
+
+document.getElementById("businesses").innerHTML=html;
+
+
+}
+
+
+
+window.filterAds=function(){
+
+
+let value=document
+
+.getElementById("search")
+
+.value
+
+.toLowerCase();
+
+
+
+let filtered=businesses.filter(x=>
+
+(x.business_name || "")
+
+.toLowerCase()
+
+.includes(value)
+
+);
+
+
+
+showBusinesses(filtered);
+
+
+}
+
+
+
+loadBusinesses();
+
+
+</script>
+
+
+</body>
+
+</html>
