@@ -4,15 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>EarnAtlas Referral Rewards</title>
+<title>EarnAtlas Referral</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -25,13 +20,34 @@ EarnAtlas Referral Rewards
 
 
 <h2>
-دوستوں کو مدعو کریں اور انعام حاصل کریں
+دوستوں کو بلائیں اور انعام حاصل کریں
 </h2>
 
 
-<div id="box">
+
+<div class="card">
+
+
+<p id="code">
 
 Loading...
+
+</p>
+
+
+<p>
+
+Share your referral code with friends.
+
+</p>
+
+
+<p>
+
+اپنا کوڈ دوستوں کے ساتھ شیئر کریں۔
+
+</p>
+
 
 </div>
 
@@ -82,7 +98,7 @@ if(!data){
 
 let code=
 
-"EARN"+Math.random()
+"EA"+Math.random()
 
 .toString(36)
 
@@ -106,61 +122,25 @@ referral_code:code
 
 
 
-data={
-
-referral_code:code,
-
-referred_users:0,
-
-reward_points:0
-
-};
+data={referral_code:code};
 
 
 }
 
 
 
-document.getElementById("box").innerHTML=
+document.getElementById("code")
 
-`
+.innerText=
 
-<div class="card">
+"Your Referral Code: "
 
-<h3>
-
-Your Referral Code:
-
-${data.referral_code}
-
-</h3>
-
-
-<p>
-
-Friends Joined:
-
-${data.referred_users}
-
-</p>
-
-
-<p>
-
-Reward Points:
-
-${data.reward_points}
-
-</p>
-
-
-</div>
-
-`;
++data.referral_code;
 
 
 
 }
+
 
 
 loadReferral();
@@ -172,4 +152,3 @@ loadReferral();
 </body>
 
 </html>
-
