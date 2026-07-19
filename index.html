@@ -23,6 +23,17 @@
 
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 <nav class="navbar">
 
 <div class="language-switch"><a href="ur/">اردو</a></div>`n`n<div class="logo">
@@ -288,6 +299,7 @@ Open Dashboard
 </p>
 
 </footer>
+
 
 
 

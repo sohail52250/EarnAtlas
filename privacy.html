@@ -12,6 +12,17 @@
 </head>
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 <h1>Privacy Policy</h1>
 
 <p>
@@ -26,6 +37,7 @@ your previous visits to this website.
 
 </body>
 </html>
+
 
 
 

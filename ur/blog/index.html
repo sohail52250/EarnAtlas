@@ -19,6 +19,17 @@ crossorigin="anonymous"></script>
 
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 
 <nav class="navbar">
 
@@ -100,6 +111,7 @@ AI سے کمائی کے مواقع
 </body>
 
 </html>
+
 
 
 

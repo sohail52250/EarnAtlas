@@ -12,6 +12,17 @@
 
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 <nav class="navbar">
 
 <div class="logo">
@@ -38,6 +49,7 @@ Learn budgeting, saving and growing your online income.
 
 </body>
 </html>
+
 
 
 

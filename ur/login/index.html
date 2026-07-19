@@ -17,6 +17,17 @@ EarnAtlas لاگ ان
 
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 
 <h1>
 EarnAtlas لاگ ان
@@ -65,3 +76,4 @@ English
 </body>
 
 </html>
+

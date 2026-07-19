@@ -11,7 +11,18 @@
 <link rel="canonical" href="https://earn-atlas.vercel.app/ur/pages/earn.html">
 </head>
 
-<body>`n<div class="language-switch"><a href="../">English</a></div>
+<body>
+
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+`n<div class="language-switch"><a href="../">English</a></div>
 
 <nav class="navbar">
 <div class="logo">EarnAtlas اردو</div>
@@ -32,6 +43,7 @@
 
 </body>
 </html>
+
 
 
 

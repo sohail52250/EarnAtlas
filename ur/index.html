@@ -14,6 +14,17 @@
 
 <body>
 
+<div id="language-area"></div>
+
+<script>
+
+fetch('/components/language.html')
+.then(r=>r.text())
+.then(t=>document.getElementById('language-area').innerHTML=t)
+
+</script>
+
+
 <nav class="navbar">
 
 <div class="language-switch"><a href="../">English</a></div>`n`n<div class="logo">
@@ -71,6 +82,7 @@ EarnAtlas اردو
 
 </body>
 </html>
+
 
 
 
