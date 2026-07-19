@@ -8,9 +8,7 @@ certificate_id text unique,
 
 course_name text,
 
-student_name text,
-
-issued_at timestamp default now()
+issued_date timestamp default now()
 
 );
 
@@ -30,11 +28,11 @@ using(auth.uid()=user_id);
 
 
 
-create policy "Users create certificates"
+create policy "Public certificate verification"
 
 on certificates
 
-for insert
+for select
 
-with check(auth.uid()=user_id);
+using(true);
 

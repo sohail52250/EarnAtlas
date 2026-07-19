@@ -8,7 +8,6 @@
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -16,26 +15,14 @@
 
 
 <h1>
-Verify EarnAtlas Certificate
+Certificate Verification
 </h1>
 
 
-<h2>
-سرٹیفکیٹ تصدیق
-</h2>
-
-
-<input id="code" placeholder="Certificate ID">
-
-
-<button onclick="verify()">
-
-Verify
-
-</button>
-
 
 <div id="result">
+
+Checking...
 
 </div>
 
@@ -50,56 +37,56 @@ from "../supabase/js/client.js";
 
 
 
-window.verify=async function(){
+async function verify(){
 
 
-let code=document
+const id=
 
-.getElementById("code")
+new URLSearchParams(location.search)
 
-.value;
+.get("id");
 
 
 
-let {data}=await supabase
+const {data}=await supabase
 
 .from("certificates")
 
 .select("*")
 
-.eq("certificate_id",code)
+.eq("certificate_id",id)
 
 .single();
 
 
 
-if(data){
+document.getElementById("result")
 
-
-document.getElementById("result").innerHTML=
+.innerHTML=data ?
 
 `
 
-<h3>
-Valid Certificate
-</h3>
+<div class="card">
+
+<h2>
+Valid Certificate ✅
+</h2>
 
 <p>
-${data.student_name}
-</p>
-
-<p>
+Course:
 ${data.course_name}
 </p>
 
-`;
+<p>
+Certificate ID:
+${data.certificate_id}
+</p>
 
-}
+</div>
 
-else{
+`
 
-
-document.getElementById("result").innerHTML=
+:
 
 "Certificate not found";
 
@@ -107,7 +94,7 @@ document.getElementById("result").innerHTML=
 }
 
 
-}
+verify();
 
 
 </script>
@@ -116,4 +103,3 @@ document.getElementById("result").innerHTML=
 </body>
 
 </html>
-

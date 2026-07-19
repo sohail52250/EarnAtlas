@@ -4,15 +4,10 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>EarnAtlas Certificates</title>
 
 <link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="/css/navigation.css">
 </head>
 
 
@@ -20,12 +15,12 @@
 
 
 <h1>
-EarnAtlas Certificates
+My Certificates
 </h1>
 
 
 <h2>
-کامیابی کے سرٹیفکیٹس
+میرے سرٹیفکیٹس
 </h2>
 
 
@@ -47,7 +42,7 @@ from "../supabase/js/client.js";
 
 
 
-async function loadCertificates(){
+async function load(){
 
 
 const {data:{user}}=
@@ -80,38 +75,13 @@ let html="";
 
 
 
-if(!data || data.length===0){
-
-
-html=
-
-`
-
-<div class="card">
-
-<p>
-Complete courses to earn certificates.
-</p>
-
-<p>
-کورس مکمل کریں اور سرٹیفکیٹ حاصل کریں۔
-</p>
-
-</div>
-
-`;
-
-}
-
-else{
-
-
-data.forEach(c=>{
+data?.forEach(c=>{
 
 
 html+=`
 
 <div class="card">
+
 
 <h3>
 ${c.course_name}
@@ -125,30 +95,38 @@ ${c.certificate_id}
 
 
 <p>
-Issued:
-${c.issued_at}
+${c.issued_date}
 </p>
+
+
+<a href="../verify/?id=${c.certificate_id}">
+
+Verify Certificate
+
+</a>
 
 
 </div>
 
 `;
 
+
+
 });
 
 
+
+document.getElementById("certificates")
+
+.innerHTML=
+
+html || "No certificates yet";
+
+
 }
 
 
-
-document.getElementById("certificates").innerHTML=html;
-
-
-}
-
-
-
-loadCertificates();
+load();
 
 
 </script>
@@ -157,4 +135,3 @@ loadCertificates();
 </body>
 
 </html>
-
