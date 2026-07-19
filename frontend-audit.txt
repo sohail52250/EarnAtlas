@@ -1,0 +1,7 @@
+﻿# EarnAtlas Frontend Audit
+
+Generated: 07/20/2026 00:34:15
+
+## Empty HTML files
+
+## Supabase placeholders
