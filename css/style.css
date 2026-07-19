@@ -719,3 +719,20 @@ h1,p,a{
     direction:rtl;
 }
 
+
+.language-switch{
+    position:absolute;
+    top:20px;
+    right:20px;
+    z-index:10;
+}
+
+.language-switch a{
+    background:#4f46e5;
+    color:white;
+    padding:8px 16px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+
