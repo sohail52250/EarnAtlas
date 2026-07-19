@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Learning Roadmap</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Learning Roadmap
+</h1>
+
+
+<h2>
+سیکھنے کا راستہ
+</h2>
+
+
+
+<div id="paths">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadRoadmap(){
+
+
+const {data}=await supabase
+
+.from("learning_paths")
+
+.select("*")
+
+.order("id");
+
+
+
+let html="";
+
+
+
+data?.forEach(path=>{
+
+
+html+=`
+
+<div class="card">
+
+
+<h2>
+
+${path.title}
+
+</h2>
+
+
+<p>
+
+Level:
+
+${path.level}
+
+</p>
+
+
+<p>
+
+${path.description}
+
+</p>
+
+
+</div>
+
+`;
+
+
+
+});
+
+
+
+document.getElementById("paths")
+
+.innerHTML=
+
+html || "No roadmap available";
+
+
+}
+
+
+
+loadRoadmap();
+
+
+</script>
+
+
+</body>
+
+</html>
