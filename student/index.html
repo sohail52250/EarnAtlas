@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Student Center</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Student Achievement Center
+</h1>
+
+
+<h2>
+طلبہ کی کامیابیاں
+</h2>
+
+
+<div id="stats">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadStats(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+let {data}=await supabase
+
+.from("student_stats")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.single();
+
+
+
+if(!data){
+
+
+await supabase
+
+.from("student_stats")
+
+.insert({
+
+user_id:user.id,
+
+points:10,
+
+streak:1,
+
+badges:"Starter"
+
+});
+
+
+data={
+
+points:10,
+
+streak:1,
+
+badges:"Starter"
+
+};
+
+
+}
+
+
+
+document.getElementById("stats").innerHTML=
+
+
+
+<div class="card">
+
+<h3>
+Points: 
+</h3>
+
+
+<h3>
+Learning Streak:  days
+</h3>
+
+
+<h3>
+Badges: 
+</h3>
+
+
+</div>
+
+;
+
+}
+
+
+loadStats();
+
+
+</script>
+
+
+</body>
+
+</html>
