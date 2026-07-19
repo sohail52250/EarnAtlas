@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EarnAtlas Student Dashboard</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<h1>EarnAtlas Learning Dashboard</h1>
+
+<h2 id="welcome">Loading user...</h2>
+
+<div id="progress"></div>
+
+<h2>Your Lessons</h2>
+
+<div id="lessons"></div>
+
+
+<script type="module">
+
+import {supabase} from "../../supabase/js/client.js";
+
+let user;
+
+
+async function start(){
+
+const result = await supabase.auth.getUser();
+
+user=result.data.user;
+
+
+if(!user){
+
+location.href="../../pages/auth/login.html";
+
+return;
+
+}
+
+
+document.getElementById("welcome").innerText =
+"Welcome "+user.email;
+
+
+loadLessons();
+
+}
+
+
+
+async function loadLessons(){
+
+
+const {data:lessons}=await supabase
+.from("lessons")
+.select("*")
+.order("id");
+
+
+
+const {data:progress}=await supabase
+.from("user_progress")
+.select("*")
+.eq("user_id",user.id);
+
+
+
+let completed =
+progress.filter(x=>x.completed).length;
+
+
+let percent =
+Math.round((completed/lessons.length)*100);
+
+
+
+document.getElementById("progress").innerHTML =
+"Progress: "+percent+"%";
+
+
+
+let html="";
+
+
+lessons.forEach((lesson,index)=>{
+
+
+let done =
+progress.some(
+p=>p.lesson_id===lesson.id && p.completed
+);
+
+
+
+let unlocked =
+index===0 ||
+done ||
+progress.some(
+p=>p.lesson_id===lessons[index-1].id && p.completed
+);
+
+
+
+html += `
+
+<div class="card">
+
+<h3>${lesson.title_en}</h3>
+
+<p>${lesson.title_ur}</p>
+
+
+${
+unlocked
+?
+`<a href="lesson.html?id=${lesson.id}">
+Open Lesson
+</a>`
+:
+"🔒 Locked"
+}
+
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("lessons").innerHTML=html;
+
+
+}
+
+
+start();
+
+
+</script>
+
+
+</body>
+</html>
