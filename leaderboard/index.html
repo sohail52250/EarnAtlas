@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Leaderboard</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas Leaderboard
+</h1>
+
+
+<h2>
+ٹاپ لرنرز
+</h2>
+
+
+
+<div id="board">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function load(){
+
+
+const {data}=await supabase
+
+.from("leaderboard")
+
+.select("*")
+
+.order("points",
+
+{ascending:false});
+
+
+
+let html="";
+
+
+data?.forEach((user,index)=>{
+
+
+html+=`
+
+<div class="card">
+
+<h3>
+#${index+1}
+${user.username}
+</h3>
+
+<p>
+Points:
+${user.points}
+</p>
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("board").innerHTML=html;
+
+
+}
+
+
+load();
+
+
+</script>
+
+
+</body>
+
+</html>
