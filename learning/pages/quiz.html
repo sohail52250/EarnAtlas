@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Quiz</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<h1>
+EarnAtlas Lesson Quiz
+</h1>
+
+<div id="quiz">
+Loading quiz...
+</div>
+
+
+<script type="module">
+
+import { supabase } from "../../supabase/js/client.js";
+
+
+const params =
+new URLSearchParams(location.search);
+
+const lessonId =
+Number(params.get("id"));
+
+
+let user;
+
+
+async function start(){
+
+const result =
+await supabase.auth.getUser();
+
+user=result.data.user;
+
+
+if(!user){
+
+location.href="../../pages/auth/login.html";
+return;
+
+}
+
+
+showQuiz();
+
+}
+
+
+
+function showQuiz(){
+
+
+document.getElementById("quiz").innerHTML=
+
+<h2>
+What did you learn?
+</h2>
+
+<p>
+Select the correct answer:
+</p>
+
+
+<button onclick="checkAnswer(true)">
+Online skills can create income
+</button>
+
+
+<br><br>
+
+
+<button onclick="checkAnswer(false)">
+Online earning is impossible
+</button>
+
+
+<p id="result"></p>
+
+;
+
+}
+
+
+
+window.checkAnswer = async function(correct){
+
+
+if(correct){
+
+
+document.getElementById("result").innerHTML=
+"✅ Correct! Lesson unlocked.";
+
+
+await supabase
+.from("user_progress")
+.insert({
+
+user_id:user.id,
+
+lesson_id:lessonId,
+
+completed:true,
+
+score:100
+
+});
+
+
+setTimeout(()=>{
+
+location.href="dashboard.html";
+
+},1500);
+
+
+
+}else{
+
+
+document.getElementById("result").innerHTML=
+"❌ Wrong answer. Please relearn this lesson and try again.";
+
+}
+
+
+}
+
+
+
+start();
+
+
+</script>
+
+</body>
+</html>
+
