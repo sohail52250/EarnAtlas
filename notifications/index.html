@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas Notifications</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Notifications
+</h1>
+
+
+<h2>
+اطلاعات اور پیغامات
+</h2>
+
+
+
+<div id="list">
+
+Loading...
+
+</div>
+
+
+
+<script type="module">
+
+import {supabase}
+
+from "../supabase/js/client.js";
+
+
+
+async function loadNotifications(){
+
+
+const {data:{user}}=
+
+await supabase.auth.getUser();
+
+
+
+if(!user){
+
+location.href="../pages/auth/login.html";
+
+return;
+
+}
+
+
+
+const {data}=await supabase
+
+.from("notifications")
+
+.select("*")
+
+.eq("user_id",user.id)
+
+.order("created_at",
+{ascending:false});
+
+
+
+let html="";
+
+
+if(!data || data.length===0){
+
+html="<p>No notifications yet</p>";
+
+}
+
+else{
+
+
+data.forEach(n=>{
+
+
+html+=`
+
+<div class="card">
+
+<h3>
+${n.title}
+</h3>
+
+<p>
+${n.message}
+</p>
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+
+document.getElementById("list").innerHTML=html;
+
+
+}
+
+
+
+loadNotifications();
+
+
+</script>
+
+
+</body>
+
+</html>
