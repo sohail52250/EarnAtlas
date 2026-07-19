@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EarnAtlas AI Assistant</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+EarnAtlas AI Assistant
+</h1>
+
+
+<h2>
+آپ کا آن لائن کمائی مددگار
+</h2>
+
+
+<div class="card">
+
+
+<p>
+Ask your learning question:
+</p>
+
+
+<p>
+اپنا سوال پوچھیں:
+</p>
+
+
+<input id="question"
+placeholder="Example: Which skill should I learn?">
+
+
+<button onclick="askAI()">
+
+Ask Assistant
+
+</button>
+
+
+<div id="answer">
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+function askAI(){
+
+
+let q=document
+
+.getElementById("question")
+
+.value
+
+.toLowerCase();
+
+
+
+let answer="";
+
+
+
+if(q.includes("freelance")){
+
+
+answer=
+
+"Start with a skill, create a profile, learn client communication, then apply for projects.\n\nفری لانسنگ کے لئے مہارت، پروفائل اور کلائنٹس سے رابطہ سیکھیں۔";
+
+
+}
+
+else if(q.includes("ai")){
+
+
+answer=
+
+"Learn AI tools, automation and digital services.\n\nAI ٹولز، آٹومیشن اور ڈیجیٹل خدمات سیکھیں۔";
+
+
+}
+
+else{
+
+
+answer=
+
+"Start Beginner Level lessons first.\n\nپہلے ابتدائی مراحل مکمل کریں۔";
+
+
+}
+
+
+
+document.getElementById("answer")
+
+.innerHTML=
+
+"<p>"+answer+"</p>";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
