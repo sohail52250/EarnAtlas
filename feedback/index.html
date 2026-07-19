@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>EarnAtlas Feedback</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Student Feedback
+</h1>
+
+
+<h2>
+اپنی رائے دیں
+</h2>
+
+
+<div class="card">
+
+
+<input id="name" placeholder="Name">
+
+
+<textarea id="feedback"
+placeholder="Your feedback"></textarea>
+
+
+<button onclick="sendFeedback()">
+
+Submit
+
+</button>
+
+
+<p id="msg"></p>
+
+
+</div>
+
+
+
+<script>
+
+function sendFeedback(){
+
+document.getElementById("msg").innerText=
+"Thank you for your feedback";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
